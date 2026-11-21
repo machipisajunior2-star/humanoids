@@ -55,6 +55,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^8.0.1",
-    "@emotion/babel-plugin": "^11.13.5"
+    "@emotion/babel-plugin": "^11.13.5",
+    "jest-canvas-mock": "^2.5.8"
   }
 }
