@@ -19,7 +19,7 @@ export default function HumanoidComponent(props) {
         )
           navigate(`/product/${data.slag}`);
       }}
-      key={`humanoid_teaser_${i}`}
+      // key={`humanoid_teaser_${i}`}
       css={css({
         ":hover .humanoid_name_container h2::before": {
           content: `"\\2B24"`,

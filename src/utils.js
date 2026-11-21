@@ -53,14 +53,6 @@ export function getVideoData$(ytId) {
   });
 }
 
-export function parseYoutubeUrl(url) {
-  var p =
-    /^(?:https?:\/\/)?(?:m\.|www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
-  let urlMatch = url.match(p);
-  if (urlMatch) return urlMatch[1];
-  return false;
-}
-
 export function colorPicker(category) {
   const colorData = categoryColors.filter((data) => data.category === category);
   return colorData[0].color;

@@ -42,8 +42,8 @@ function Home() {
   return (
     <main id="Home-Page-container">
       <section className="canvas-container">
-        <canvas ref={canvasRef1} id="canvas-1"></canvas>
-        <canvas ref={canvasRef2} id="canvas-2"></canvas>
+        <canvas ref={canvasRef1} id="canvas-1" aria-label="canvas-1"></canvas>
+        <canvas ref={canvasRef2} id="canvas-2" aria-label="canvas-2"></canvas>
       </section>
       <FeautureHumanoid id={0} />
       <section className="humanoids_section_container">
@@ -52,12 +52,28 @@ function Home() {
         </header>
         <div className="humanoids_container">
           <div className="first_stack">
-            <HumanoidComponent data={data[6]} i={6} />
+            <HumanoidComponent
+              data={data[6]}
+              i={6}
+              key={`humanoid_teaser_${6}`}
+            />
           </div>
           <div className="second_stack">
-            <HumanoidComponent data={data[11]} i={11} />
-            <HumanoidComponent data={data[3]} i={3} />
-            <HumanoidComponent data={data[14]} i={14} />
+            <HumanoidComponent
+              data={data[11]}
+              i={11}
+              key={`humanoid_teaser_${11}`}
+            />
+            <HumanoidComponent
+              data={data[3]}
+              i={3}
+              key={`humanoid_teaser_${3}`}
+            />
+            <HumanoidComponent
+              data={data[14]}
+              i={14}
+              key={`humanoid_teaser_${14}`}
+            />
           </div>
         </div>
       </section>
@@ -77,12 +93,28 @@ function Home() {
               padding: "0 19px 0 0",
             }}
           >
-            <HumanoidComponent data={data[27]} i={27} />
+            <HumanoidComponent
+              data={data[27]}
+              i={27}
+              key={`humanoid_teaser_${27}`}
+            />
           </div>
           <div className="second_stack">
-            <HumanoidComponent data={data[15]} i={15} />
-            <HumanoidComponent data={data[4]} i={4} />
-            <HumanoidComponent data={data[9]} i={9} />
+            <HumanoidComponent
+              data={data[15]}
+              i={15}
+              key={`humanoid_teaser_${15}`}
+            />
+            <HumanoidComponent
+              data={data[4]}
+              i={4}
+              key={`humanoid_teaser_${4}`}
+            />
+            <HumanoidComponent
+              data={data[9]}
+              i={9}
+              key={`humanoid_teaser_${9}`}
+            />
           </div>
         </div>
       </section>
@@ -97,10 +129,18 @@ function Home() {
           </Link>
         </header>
         <div className="articles_container">
-          <div className="article_container"><ArticleComponent id={7} /></div>
-          <div className="article_container"><ArticleComponent id={8} /></div>
-          <div className="article_container"><ArticleComponent id={2} /></div>
-          <div className="article_container"><ArticleComponent id={1} /></div>
+          <div className="article_container">
+            <ArticleComponent id={7} />
+          </div>
+          <div className="article_container">
+            <ArticleComponent id={8} />
+          </div>
+          <div className="article_container">
+            <ArticleComponent id={2} />
+          </div>
+          <div className="article_container">
+            <ArticleComponent id={1} />
+          </div>
         </div>
       </section>
 
@@ -136,10 +176,18 @@ function Home() {
           style={{ flexDirection: "row" }}
         >
           <div className="second_stack" id="random_teaser">
-              <HumanoidComponent data={data[humanoidPicker.first]} i={humanoidPicker.first} />
+            <HumanoidComponent
+              data={data[humanoidPicker.first]}
+              i={humanoidPicker.first}
+              key={`humanoid_teaser_${humanoidPicker.first}`}
+            />
           </div>
           <div className="first_stack" id="random_teaser">
-              <HumanoidComponent data={data[humanoidPicker.second]} i={humanoidPicker.second} />
+            <HumanoidComponent
+              data={data[humanoidPicker.second]}
+              i={humanoidPicker.second}
+              key={`humanoid_teaser_${humanoidPicker.second}`}
+            />
           </div>
         </div>
       </section>

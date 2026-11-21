@@ -20,7 +20,7 @@ function Category() {
         </h1>
       </header>
       <section className="category_page_container">
-        {humanoidData.map((humanoid, i) => <HumanoidComponent data={humanoid} i={i} />)}
+        {humanoidData.map((humanoid, i) => <HumanoidComponent data={humanoid} i={i} key={`humanoid_teaser_${i}`} />)}
       </section>
     </main>
   );

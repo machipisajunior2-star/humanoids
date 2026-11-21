@@ -7,7 +7,7 @@ export default function NewsComponent(props) {
   const themeColorState = useSelector(
     (state) => state.themeColor.colorPalette.text,
   );
-  const { data, i } = props;
+  const { data } = props;
   const monthsArr = [
     "Jan",
     "Feb",
@@ -28,7 +28,7 @@ export default function NewsComponent(props) {
   const month = monthsArr[currentDateObj.getMonth()];
   const year = currentDateObj.getFullYear();
   return (
-    <div className="news_link_container" key={`news_article_${i}`}>
+    <div className="news_link_container">
       <a
         href={data.url}
         css={css({

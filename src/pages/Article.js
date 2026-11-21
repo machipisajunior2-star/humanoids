@@ -140,12 +140,12 @@ export default function Article() {
           <small>
             Written by <strong style={{color: themeColorState.text}}>{parse(articleData[0].author)}</strong>
           </small>
-          <date>
+          <time>
             <small>
               {month} {day}, {year}
               {articleData[0].time ? `, ${articleData[0].time}` : ""}
             </small>
-          </date>
+          </time>
         </div>
         <div className="article_page_details_container">
           {articleData[0].image && <img src={articleData[0].image} alt={articleData[0].title} />}

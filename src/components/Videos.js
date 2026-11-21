@@ -5,7 +5,7 @@ import YouTube from "react-youtube";
 import { GiPlayButton } from "react-icons/gi";
 import { firstValueFrom } from "rxjs";
 import data from "../data/data.json";
-import { parseYoutubeUrl, getVideoData$ } from "../utils";
+import { getVideoData$ } from "../utils";
 import "../styling/videos.css";
 
 export default function Videos(props) {
@@ -34,7 +34,6 @@ export default function Videos(props) {
     if (iframe?.parentElement) {
       iframe.parentElement.style.width = "100%";
     }
-    // document.querySelector(".youtube_iframe").parentElement.style.height = "100%";
   };
 
   function handleClick() {
@@ -44,7 +43,7 @@ export default function Videos(props) {
     youtubePlayerRef.current?.playVideo?.();
   }
   function handle_thumb(video) {
-    getVideoDataFromUrl(`https://www.youtube.com/embed/${video}`);
+    getVideoData(video);
     setActiveThumbnailImage(thumbnail(video));
     setFocusVideo(video);
     youtubePlayerRef.current?.target?.pauseVideo?.();
@@ -56,15 +55,13 @@ export default function Videos(props) {
     return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
   }
 
-  async function getVideoDataFromUrl(url) {
-    const videoId = parseYoutubeUrl(url);
-    if (!videoId) return false;
-    let data = await firstValueFrom(getVideoData$(videoId));
+  async function getVideoData(video_id) {
+    let data = await firstValueFrom(getVideoData$(video_id));
     setVideoData(data);
   }
 
   useEffect(() => {
-    getVideoDataFromUrl(`https://www.youtube.com/embed/${video_id[0]}`);
+    getVideoData(video_id[0]);
     setActiveThumbnailImage(thumbnail(video_id[0]));
     setFocusVideo(video_id[0])
     setActiveVideo("")

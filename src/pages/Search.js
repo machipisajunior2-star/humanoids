@@ -80,7 +80,11 @@ function Search() {
         <div className="data_container">
           {searchData.length > 0 ? (
             searchData.map((humanoid, i) => (
-              <HumanoidComponent data={humanoid} i={i} />
+              <HumanoidComponent
+                data={humanoid}
+                i={i}
+                key={`humanoid_teaser_${i}`}
+              />
             ))
           ) : (
             <div className="suggestions_conatiner">

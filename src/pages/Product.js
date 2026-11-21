@@ -388,7 +388,9 @@ export default function Product() {
           </header>
           <div className="related_news">
             {newsData !== null && newsData !== undefined && newsData.length ? (
-              newsData.map((data, i) => <NewsComponent data={data} i={i} />)
+              newsData.map((data, i) => (
+                <NewsComponent data={data} i={i} key={`news_article_${i}`} />
+              ))
             ) : loading ? (
               <ThreeCircles
                 height="80"
@@ -412,7 +414,15 @@ export default function Product() {
           </header>
           <div className="related_humanoids">
             {relatedHumanoids.map((data, i) =>
-              i < 4 ? <HumanoidComponent data={data} i={i} /> : "",
+              i < 4 ? (
+                <HumanoidComponent
+                  data={data}
+                  i={i}
+                  key={`humanoid_teaser_${i}`}
+                />
+              ) : (
+                ""
+              ),
             )}
           </div>
         </div>

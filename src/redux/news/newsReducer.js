@@ -5,7 +5,6 @@ import {
 } from "./newsType";
 
 const storage = JSON.parse(localStorage.getItem("news"));
-console.log(storage)
 const initialState = {
   loading: false,
   news: {},

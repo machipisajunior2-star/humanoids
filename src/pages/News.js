@@ -22,7 +22,9 @@ function News() {
       </header>
       <section className="news_container">
         {newsData ? (
-          newsData.map((data, i) => <NewsComponent data={data} i={i} />)
+          newsData.map((data, i) => (
+            <NewsComponent data={data} i={i} key={`news_article_${i}`} />
+          ))
         ) : loading ? (
           <ThreeCircles
             height="80"
