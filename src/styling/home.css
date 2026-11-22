@@ -232,7 +232,7 @@ canvas {
   border-radius: 12.5px;
   gap: 10px;
   margin-top: 1em;
-  width: inherit;
+  width: 100%;
   padding: 7px;
 }
 
