@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React, { useState, useEffect } from "react";
@@ -327,7 +328,6 @@ function NavComponent() {
                   id="search-field"
                   type="search"
                   placeholder="Search"
-                  autoFocus
                   style={{
                     color: `${colorState.text === "#000000" ? "#262626" : "#d9d9d9"}`,
                   }}
@@ -398,8 +398,8 @@ function NavComponent() {
             </li>
             <li>
               <details
-                onClick={(e) => {
-                  setIsCategoryButtonActive((isActive) => !isActive);
+                onToggle={(event) => {
+                  setIsCategoryButtonActive(event.currentTarget.open);
                 }}
               >
                 <summary
@@ -506,8 +506,8 @@ function NavComponent() {
           </li>
           <li>
             <details
-              onClick={() => {
-                setIsCategoryButtonActive((isActive) => !isActive);
+              onToggle={(event) => {
+                setIsCategoryButtonActive(event.currentTarget.open);
               }}
             >
               <summary

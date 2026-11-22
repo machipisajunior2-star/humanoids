@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -59,27 +57,10 @@ export default function Contact() {
           <h3>Contact Me</h3>
         </header>
         <ul>
-          <li
-            css={css({
-              ":hover a::before": {
-                content: `"\\2B24"`,
-                color: "#FF4C00",
-              },
-            })}
-          >
+          <li>
             <Link
               to="/about"
-              css={css({
-                color: colorState.text === "#000000" ? "#595970" : "#BFBFBF",
-                "::before": {
-                  paddingRight: "10px",
-                  content: '"\\1F785"',
-                  fontSize: "1em",
-                },
-                ":hover": {
-                  color: colorState.text === "#000000" ? "black" : "white",
-                },
-              })}
+              style={{ color: colorState.text === "#000000" ? "#595970" : "#BFBFBF" }}
             >
               About
             </Link>
@@ -87,15 +68,7 @@ export default function Contact() {
           <li>
             <Link
               to="/contact"
-              css={css({
-                color: colorState.text === "#000000" ? "black" : "white",
-                "::before": {
-                  paddingRight: "10px",
-                  color: "#FF4C00",
-                  content: `"\\2B24"`,
-                  fontSize: "1em",
-                },
-              })}
+              style={{ color: colorState.text === "#000000" ? "black" : "white" }}
             >
               Contact
             </Link>
@@ -156,88 +129,75 @@ export default function Contact() {
           }}
         >
           <h2>Contact form</h2>
-          <label>Name</label>
+          <label htmlFor="name_input">Name</label>
           <input
-            css={css({
-              backgroundColor: `${colorState.text === "#000000" ? "#CFCFCA" : "#404040"}`,
-              "&:focus-within": {
-                border: `2px solid #FF4C00`,
-              },
-            })}
+            onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
+            onBlur={(event) => { event.currentTarget.style.border = ""; }}
             key="conatct_name_input"
             name="name"
             id="name_input"
             type="text"
             placeholder="Your Name"
-            autoFocus
             style={{
+              backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
               color: `${colorState.text === "#000000" ? "#262626" : "#d9d9d9"}`,
             }}
             required
           />
-          <label>Email address</label>
+          <label htmlFor="email_input">Email address</label>
           <input
-            css={css({
-              backgroundColor: `${colorState.text === "#000000" ? "#CFCFCA" : "#404040"}`,
-              "&:focus-within": {
-                border: `2px solid #FF4C00`,
-              },
-            })}
+            onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
+            onBlur={(event) => { event.currentTarget.style.border = ""; }}
             id="email_input"
             name="email"
             type="email"
             placeholder="An address where you can receive a reply"
             style={{
+              backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
               color: `${colorState.text === "#000000" ? "#262626" : "#d9d9d9"}`,
             }}
             required
           />
-          <label>Subject</label>
+          <label htmlFor="subject_input">Subject</label>
           <input
-            css={css({
-              backgroundColor: `${colorState.text === "#000000" ? "#CFCFCA" : "#404040"}`,
-              "&:focus-within": {
-                border: `2px solid #FF4C00`,
-              },
-            })}
+            onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
+            onBlur={(event) => { event.currentTarget.style.border = ""; }}
             name="subject"
             id="subject_input"
             type="text"
             placeholder="What would you like to discuss?"
             style={{
+              backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
               color: `${colorState.text === "#000000" ? "#262626" : "#d9d9d9"}`,
             }}
             required
           />
-          <label>Message</label>
+          <label htmlFor="message_input">Message</label>
           <textarea
-            css={css({
-              backgroundColor: `${colorState.text === "#000000" ? "#CFCFCA" : "#404040"}`,
-              "&:focus-within": {
-                border: `2px solid #FF4C00`,
-              },
-            })}
+            onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
+            onBlur={(event) => { event.currentTarget.style.border = ""; }}
             id="message_input"
             name="message"
             type="text"
             placeholder="Include enough detail to make your question or suggestion easy to understand."
             style={{
+              backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
               color: `${colorState.text === "#000000" ? "#262626" : "#d9d9d9"}`,
             }}
             required
           />
-          <label>Optional link</label>
+          <label htmlFor="optional_input">Optional link</label>
           <input
-            css={css({
-              backgroundColor: `${colorState.text === "#000000" ? "#CFCFCA" : "#404040"}`,
-              "&:focus-within": {
-                border: `2px solid #FF4C00`,
-              },
-            })}
+            onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
+            onBlur={(event) => { event.currentTarget.style.border = ""; }}
             id="optional_input"
             name="optional"
             type="text"
             placeholder="Add a project, article, portfolio, repository, or profile if it helps provide context."
+            style={{
+              backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
+              color: colorState.text === "#000000" ? "#262626" : "#d9d9d9",
+            }}
           />
           <input defaultValue={new Date()} name="time" hidden={true} />
           <button ref={buttonRef}>Send message</button>

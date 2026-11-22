@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React from "react";
+import PropTypes from "prop-types";
 import useEmblaCarousel from "embla-carousel-react";
 import {
   NextButton,
@@ -62,6 +63,12 @@ const EmblaScroller = (props) => {
       </div>
     </div>
   );
+};
+
+EmblaScroller.propTypes = {
+  slides: PropTypes.array.isRequired,
+  options: PropTypes.object,
+  color: PropTypes.string,
 };
 
 export default EmblaScroller;

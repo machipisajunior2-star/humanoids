@@ -1,6 +1,4 @@
-/** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchProduct } from "../redux/product/productActions";
@@ -24,8 +22,8 @@ export default function Product() {
   const newsData = useSelector((state) => state.news?.news?.news ?? null);
   const data = useSelector((state) => state.product.product);
   const themeColorState = useSelector((state) => state.themeColor.colorPalette);
-  const [humanoidData, setHumanoidData] = useState(
-    humanoids.filter((humanoid) => humanoid.slag === productSlag),
+  const humanoidData = humanoids.filter(
+    (humanoid) => humanoid.slag === productSlag,
   );
   const relatedHumanoids = humanoids.filter(
     (humanoid) =>
@@ -43,9 +41,6 @@ export default function Product() {
   useEffect(() => {
     const selectedHumanoid = humanoids.find(
       (humanoid) => humanoid.slag === productSlag,
-    );
-    setHumanoidData(
-      humanoids.filter((humanoid) => humanoid.slag === productSlag),
     );
     if (selectedHumanoid) {
       dispatch(fetchNews(`${selectedHumanoid.useType} humanoids`, 4));
@@ -115,13 +110,17 @@ export default function Product() {
                   navigate(`/category/${data.userType.toLowerCase()}`)
                 }
                 className="category-button"
-                css={css({
-                  border: `1px solid ${themeColorState.text}`,
-                  ":hover": {
-                    background: colorPicker(data.userType.toLowerCase()),
-                    border: "transparent",
-                  },
-                })}
+                style={{ border: `1px solid ${themeColorState.text}` }}
+                onMouseEnter={(event) => {
+                  event.currentTarget.style.background = colorPicker(
+                    data.userType.toLowerCase(),
+                  );
+                  event.currentTarget.style.border = "transparent";
+                }}
+                onMouseLeave={(event) => {
+                  event.currentTarget.style.background = "";
+                  event.currentTarget.style.border = `1px solid ${themeColorState.text}`;
+                }}
               >
                 <span
                   className="category-button-name"

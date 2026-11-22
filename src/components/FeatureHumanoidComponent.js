@@ -1,6 +1,8 @@
 /** @jsxImportSource @emotion/react */
+/* eslint-disable react/no-unknown-property */
 import { css } from "@emotion/react";
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { HiArrowRight } from "react-icons/hi";
@@ -13,7 +15,11 @@ export default function FeautureHumanoid(props) {
   const themeColorState = useSelector((state) => state.themeColor.colorPalette);
   const [isActive, setIsActive] = useState(false);
   const { id } = props;
+
+  const openFeaturedHumanoid = () => navigate(`/product/${data[id].slag}`);
+
   return (
+    // eslint-disable-next-line jsx-a11y/no-static-element-interactions
     <section
       className={
         isActive
@@ -34,11 +40,13 @@ export default function FeautureHumanoid(props) {
         backgroundImage: `url(${data[id].image[0]})`,
       })}
       onClick={(e) => {
-        if (
-          e.target.className !== "category-button-name" &&
-          e.target.className !== "category-button"
-        )
-          navigate(`/product/${data[id].slag}`);
+        if (!e.target.closest(".category-button")) openFeaturedHumanoid();
+      }}
+      onKeyDown={(e) => {
+        if (e.target === e.currentTarget && (e.key === "Enter" || e.key === " ")) {
+          e.preventDefault();
+          openFeaturedHumanoid();
+        }
       }}
     >
       <div className="home_featured_humanoid_container">
@@ -97,3 +105,7 @@ export default function FeautureHumanoid(props) {
     </section>
   );
 }
+
+FeautureHumanoid.propTypes = {
+  id: PropTypes.number.isRequired,
+};

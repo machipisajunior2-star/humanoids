@@ -1,8 +1,13 @@
 import React, { useCallback, useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
 export const useDotButton = (emblaApi) => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState([]);
+  const [selectedIndex, setSelectedIndex] = useState(() =>
+    emblaApi ? emblaApi.selectedScrollSnap() : 0,
+  );
+  const [scrollSnaps, setScrollSnaps] = useState(() =>
+    emblaApi ? emblaApi.scrollSnapList() : [],
+  );
 
   const onDotButtonClick = useCallback(
     (index) => {
@@ -23,10 +28,14 @@ export const useDotButton = (emblaApi) => {
   useEffect(() => {
     if (!emblaApi) return;
 
-    onInit(emblaApi);
-    onSelect(emblaApi);
-
     emblaApi.on("reinit", onInit).on("reinit", onSelect).on("select", onSelect);
+
+    return () => {
+      emblaApi
+        .off("reinit", onInit)
+        .off("reinit", onSelect)
+        .off("select", onSelect);
+    };
   }, [emblaApi, onInit, onSelect]);
 
   return {
@@ -44,4 +53,8 @@ export const DotButton = (props) => {
       {children}
     </button>
   );
+};
+
+DotButton.propTypes = {
+  children: PropTypes.node,
 };

@@ -1,6 +1,7 @@
+import React from "react";
+import { expect, jest, test } from "@jest/globals";
 import { render, screen } from "@testing-library/react";
 import EmblaScroller from "../../components/embla/EmblaScroller";
-import humanoidData from "../../data/data.json";
 
 jest.mock("embla-carousel-react", () => {
   return () => [null];

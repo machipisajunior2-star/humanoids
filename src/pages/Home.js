@@ -1,5 +1,4 @@
-/** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
+import { ClassNames } from "@emotion/react";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -148,26 +147,28 @@ function Home() {
         <header className="section_heading_container">
           <div className="random_humanoid_header_content">
             <h1 className="section_heading">TWO RANDOM HUMANOIDS</h1>
-            <button
-              className="random_generator"
-              key={"random_button_2"}
-              css={css({
-                ":hover": {
-                  background: "#FF4C00",
-                },
-                background: themeColorState.text === "#000000" ? "#CFCFCA" : "",
-              })}
-              onClick={() => generateNumbers()}
-            >
-              <RiRobot3Fill
-                size={25}
-                color={
-                  themeColorState.text === "#000000"
-                    ? "#767676"
-                    : themeColorState.text
-                }
-              />
-            </button>
+            <ClassNames>
+              {({ css }) => (
+                <button
+                  className={`random_generator ${css({
+                    ":hover": { background: "#FF4C00" },
+                    background:
+                      themeColorState.text === "#000000" ? "#CFCFCA" : "",
+                  })}`}
+                  key="random_button_2"
+                  onClick={() => generateNumbers()}
+                >
+                  <RiRobot3Fill
+                    size={25}
+                    color={
+                      themeColorState.text === "#000000"
+                        ? "#767676"
+                        : themeColorState.text
+                    }
+                  />
+                </button>
+              )}
+            </ClassNames>
           </div>
         </header>
         <div

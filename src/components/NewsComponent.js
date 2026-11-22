@@ -1,6 +1,8 @@
+/* eslint-disable react/no-unknown-property */
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React from "react";
+import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 
 export default function NewsComponent(props) {
@@ -69,3 +71,14 @@ export default function NewsComponent(props) {
     </div>
   );
 }
+
+NewsComponent.propTypes = {
+  data: PropTypes.shape({
+    published: PropTypes.string,
+    url: PropTypes.string,
+    image: PropTypes.string,
+    author: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+  }).isRequired,
+};

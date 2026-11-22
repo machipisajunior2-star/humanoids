@@ -1,3 +1,5 @@
+import React from "react";
+import { expect, jest, test } from "@jest/globals";
 import { render, screen } from "@testing-library/react";
 import EmblaCarousel from "../../components/embla/EmblaCarousel";
 import humanoidData from "../../data/data.json";

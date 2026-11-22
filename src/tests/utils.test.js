@@ -1,6 +1,8 @@
 /**
  * @jest-environment jsdom
+ * @jest-environment-options {"customExportConditions":["browser"]}
  */
+import { test, expect } from "@jest/globals";
 import {
   colorPicker,
   filterByEitherProperty,

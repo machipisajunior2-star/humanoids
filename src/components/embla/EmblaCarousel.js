@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React, { useState, useEffect, useCallback } from "react";
+import PropTypes from "prop-types";
 import useEmblaCarousel from "embla-carousel-react";
 import {
   NextButton,
@@ -26,9 +27,10 @@ const EmblaCarousel = (props) => {
     if (!emblaApi) return;
     emblaApi.on("slidesChanged", updateDotCount);
 
-    updateDotCount();
+    const frame = requestAnimationFrame(updateDotCount);
 
     return () => {
+      cancelAnimationFrame(frame);
       emblaApi.off("slidesChanged", updateDotCount);
     };
   }, [emblaApi, updateDotCount]);
@@ -84,6 +86,12 @@ const EmblaCarousel = (props) => {
       </div>
     </div>
   );
+};
+
+EmblaCarousel.propTypes = {
+  slides: PropTypes.arrayOf(PropTypes.string).isRequired,
+  options: PropTypes.object,
+  color: PropTypes.string,
 };
 
 export default EmblaCarousel;

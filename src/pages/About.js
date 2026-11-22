@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
+import { ClassNames, css } from "@emotion/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -31,31 +31,37 @@ export default function About() {
               About
             </Link>
           </li>
-          <li
-            css={css({
-              ":hover a::before": {
-                content: `"\\2B24"`,
-                color: "#FF4C00",
-              },
-            })}
-          >
-            <Link
-              to="/contact"
-              css={css({
-                color: colorState.text === "#000000" ? "#595970" : "#BFBFBF",
-                "::before": {
-                  paddingRight: "10px",
-                  content: '"\\1F785"',
-                  fontSize: "1em",
-                },
-                ":hover": {
-                  color: colorState.text === "#000000" ? "black" : "white",
-                },
-              })}
-            >
-              Contact
-            </Link>
-          </li>
+          <ClassNames>
+            {({ css: emotionCss }) => (
+              <li
+                className={emotionCss({
+                  ":hover a::before": {
+                    content: `"\\2B24"`,
+                    color: "#FF4C00",
+                  },
+                })}
+              >
+                <Link
+                  to="/contact"
+                  css={css({
+                    color:
+                      colorState.text === "#000000" ? "#595970" : "#BFBFBF",
+                    "::before": {
+                      paddingRight: "10px",
+                      content: '"\\1F785"',
+                      fontSize: "1em",
+                    },
+                    ":hover": {
+                      color:
+                        colorState.text === "#000000" ? "black" : "white",
+                    },
+                  })}
+                >
+                  Contact
+                </Link>
+              </li>
+            )}
+          </ClassNames>
         </ul>
       </div>
       <section className="info_container">

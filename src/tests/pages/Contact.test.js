@@ -1,6 +1,8 @@
+import React from "react";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
+import { expect, test } from "@jest/globals";
 import store from "../../redux/store";
 import Contact from "../../pages/Contact";
 

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { useCallback, useEffect, useState } from "react";
 
 export const usePrevNextButtons = (emblaApi) => {
@@ -22,8 +23,14 @@ export const usePrevNextButtons = (emblaApi) => {
   useEffect(() => {
     if (!emblaApi) return;
 
-    onSelect(emblaApi);
     emblaApi.on("reinit", onSelect).on("select", onSelect);
+
+    const frameId = window.requestAnimationFrame(() => onSelect(emblaApi));
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      emblaApi.off("reinit", onSelect).off("select", onSelect);
+    };
   }, [emblaApi, onSelect]);
 
   return {
@@ -56,6 +63,11 @@ export const PrevButton = (props) => {
   );
 };
 
+PrevButton.propTypes = {
+  children: PropTypes.node,
+  disabled: PropTypes.bool,
+};
+
 export const NextButton = (props) => {
   const { children, disabled, ...restProps } = props;
 
@@ -76,4 +88,9 @@ export const NextButton = (props) => {
       {children}
     </button>
   );
+};
+
+NextButton.propTypes = {
+  children: PropTypes.node,
+  disabled: PropTypes.bool,
 };

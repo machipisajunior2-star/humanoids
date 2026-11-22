@@ -1,6 +1,8 @@
+/* eslint-disable react/no-unknown-property */
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React from "react";
+import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { colorPicker } from "../utils";
@@ -10,19 +12,25 @@ export default function HumanoidComponent(props) {
   let navigate = useNavigate();
   const themeColorState = useSelector((state) => state.themeColor.colorPalette);
   return (
-    <article
+    <div
       className="humanoid_teaser"
+      role="link"
+      tabIndex={0}
       onClick={(e) => {
         if (
-          e.target.className !== "category-button-name" &&
-          e.target.className !== "category-button"
+          e.target === e.currentTarget ||
+          (e.target.className !== "category-button-name" &&
+            e.target.className !== "category-button")
         )
           navigate(`/product/${data.slag}`);
       }}
-      // key={`humanoid_teaser_${i}`}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" && e.target === e.currentTarget)
+          navigate(`/product/${data.slag}`);
+      }}
       css={css({
         ":hover .humanoid_name_container h2::before": {
-          content: `"\\2B24"`,
+          content: '"\\2B24"',
           color: colorPicker(data.useType.toLowerCase()),
         },
       })}
@@ -78,6 +86,16 @@ export default function HumanoidComponent(props) {
           </button>
         </div>
       </div>
-    </article>
+    </div>
   );
 }
+
+HumanoidComponent.propTypes = {
+  data: PropTypes.shape({
+    slag: PropTypes.string.isRequired,
+    useType: PropTypes.string.isRequired,
+    image: PropTypes.arrayOf(PropTypes.string).isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
+  i: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};

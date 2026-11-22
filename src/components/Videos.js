@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import YouTube from "react-youtube";
 import { GiPlayButton } from "react-icons/gi";
 import { firstValueFrom } from "rxjs";
@@ -13,11 +14,18 @@ export default function Videos(props) {
   const youtubePlayerRef = useRef(null);
   const playerRef = useRef(null);
   const [videoData, setVideoData] = useState({});
-  const [activeVideo, setActiveVideo] = useState("");
-  const [focusVideo, setFocusVideo] = useState(video_id[0]);
-  const [activeThumbnailImage, setActiveThumbnailImage] = useState(
-    thumbnail(video_id[0]),
-  );
+  const [videoSelection, setVideoSelection] = useState({
+    videoIds: video_id,
+    focusVideo: video_id[0],
+    activeVideo: "",
+  });
+  if (videoSelection.videoIds !== video_id) {
+    setVideoSelection({ videoIds: video_id, focusVideo: video_id[0], activeVideo: "" });
+  }
+  const { focusVideo, activeVideo } =
+    videoSelection.videoIds === video_id
+      ? videoSelection
+      : { focusVideo: video_id[0], activeVideo: "" };
   const opts = {
     height: "100%",
     width: "100%",
@@ -39,13 +47,12 @@ export default function Videos(props) {
   function handleClick() {
     playerRef.current.style.display = "none";
     document.querySelector("#yt").style.display = "flex";
-    setActiveVideo(focusVideo);
+    setVideoSelection((selection) => ({ ...selection, activeVideo: focusVideo }));
     youtubePlayerRef.current?.playVideo?.();
   }
   function handle_thumb(video) {
     getVideoData(video);
-    setActiveThumbnailImage(thumbnail(video));
-    setFocusVideo(video);
+    setVideoSelection((selection) => ({ ...selection, focusVideo: video }));
     youtubePlayerRef.current?.target?.pauseVideo?.();
     document.querySelector("#yt").style.display = "none";
     playerRef.current.style.display = "flex";
@@ -62,9 +69,6 @@ export default function Videos(props) {
 
   useEffect(() => {
     getVideoData(video_id[0]);
-    setActiveThumbnailImage(thumbnail(video_id[0]));
-    setFocusVideo(video_id[0]);
-    setActiveVideo("");
     document.querySelector("#yt").style.display = "none";
     playerRef.current.style.display = "flex";
   }, [video_id]);
@@ -75,7 +79,7 @@ export default function Videos(props) {
         <button className="video_button" onClick={handleClick} ref={playerRef}>
           <img
             className="video_thumbnail"
-            src={activeThumbnailImage}
+            src={thumbnail(focusVideo)}
             alt={`${data[0].name} 1`}
           />
           <div className="play_button" style={{ backgroundColor: color }}>
@@ -105,6 +109,7 @@ export default function Videos(props) {
                 className="scroller_button"
                 key={`scroller_button_${i}`}
                 onClick={() => handle_thumb(video)}
+                // eslint-disable-next-line react/no-unknown-property
                 css={css({
                   ":hover .video_thumbnail": {
                     border: `5px solid ${theme.text}`,
@@ -127,3 +132,11 @@ export default function Videos(props) {
     </section>
   );
 }
+
+Videos.propTypes = {
+  video_id: PropTypes.arrayOf(PropTypes.string).isRequired,
+  color: PropTypes.string.isRequired,
+  theme: PropTypes.shape({
+    text: PropTypes.string.isRequired,
+  }).isRequired,
+};

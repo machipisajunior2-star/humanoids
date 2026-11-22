@@ -40,6 +40,7 @@ function Search() {
             }}
           >
             <label
+              // eslint-disable-next-line react/no-unknown-property
               css={css({
                 backgroundColor: `${colorState.text === "#000000" ? "#CFCFCA" : "#404040"}`,
                 "&:focus-within": {
@@ -68,7 +69,6 @@ function Search() {
                     ),
                   );
                 }}
-                autoFocus
                 style={{
                   color: `${colorState.text === "#000000" ? "#262626" : "#d9d9d9"}`,
                 }}

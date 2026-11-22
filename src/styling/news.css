@@ -81,6 +81,7 @@
   width: inherit;
   height: 30vh;
   border-radius: 12.5px;
+  margin-left: 3vw;
 }
 
 .news_link_container:first-child a img {
@@ -118,6 +119,7 @@
   .news_link_container a img {
     width: 100%;
     height: inherit;
+    margin-left: 0;
   }
 
   .news_link_container:nth-child(4n) a img {
