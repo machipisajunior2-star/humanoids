@@ -81,7 +81,7 @@
   width: inherit;
   height: 30vh;
   border-radius: 12.5px;
-  margin-left: 3vw;
+  margin-left: auto;
 }
 
 .news_link_container:first-child a img {

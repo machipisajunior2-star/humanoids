@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 import PropTypes from "proptypes";
 import articleData from "../data/articles.json";
 
-
 export default function ArticleComponent(props) {
   const themeColorState = useSelector(
     (state) => state.themeColor.colorPalette.text,

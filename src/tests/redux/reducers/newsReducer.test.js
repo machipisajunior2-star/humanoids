@@ -6,7 +6,6 @@ import {
 } from "../../../redux/news/newsType";
 import newsReducer from "../../../redux/news/newsReducer";
 
-
 const storage = JSON.parse(localStorage.getItem("news"));
 describe("NEWS Reducer", () => {
   it("FETCH_NEWS request", () => {
@@ -27,7 +26,7 @@ describe("NEWS Reducer", () => {
     const state = {};
     const action = {
       type: FETCH_NEWS_SUCCESS,
-      payload: [{title: "hello", url: "hello.com"}]
+      payload: [{ title: "hello", url: "hello.com" }],
     };
     const results = newsReducer(state, action);
     expect(results).toEqual({

@@ -78,7 +78,6 @@
 }
 
 .search-input-con {
-  /* position: fixed; */
   display: inline-flex;
   align-items: center;
   z-index: 1000;

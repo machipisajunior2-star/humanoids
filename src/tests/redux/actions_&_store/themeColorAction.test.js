@@ -12,16 +12,21 @@ describe("addThemeColor", () => {
     storeFactory = store({
       colorPalette: {
         background: colors[0].background,
-        text: colors[0].text
+        text: colors[0].text,
       },
-      id: colors[0].id
+      id: colors[0].id,
     });
-    storeFactory.dispatch(changeColor({
-        background: colors[2].background,
-        text: colors[2].text
-      }, colors[2].id));
+    storeFactory.dispatch(
+      changeColor(
+        {
+          background: colors[2].background,
+          text: colors[2].text,
+        },
+        colors[2].id,
+      ),
+    );
   });
-  
+
   it("store should add the id", () =>
     expect(storeFactory.getState().id).toBe("01"));
   it("store should set the colorPalette background", () =>
@@ -34,7 +39,9 @@ describe("addThemeColor", () => {
   it("changeColor action should return the id", () =>
     expect(storeFactory.getActions()[0].id).toBe("03"));
   it("changeColor action should return the background color", () =>
-    expect(storeFactory.getActions()[0].colorPalette.background).toBe("#092328"));
+    expect(storeFactory.getActions()[0].colorPalette.background).toBe(
+      "#092328",
+    ));
   it("changeColor action should return the text color", () =>
     expect(storeFactory.getActions()[0].colorPalette.text).toBe("#D8E1E7"));
 });

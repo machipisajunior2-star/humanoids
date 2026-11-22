@@ -43,7 +43,10 @@ export default function FeautureHumanoid(props) {
         if (!e.target.closest(".category-button")) openFeaturedHumanoid();
       }}
       onKeyDown={(e) => {
-        if (e.target === e.currentTarget && (e.key === "Enter" || e.key === " ")) {
+        if (
+          e.target === e.currentTarget &&
+          (e.key === "Enter" || e.key === " ")
+        ) {
           e.preventDefault();
           openFeaturedHumanoid();
         }

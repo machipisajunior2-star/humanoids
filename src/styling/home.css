@@ -117,8 +117,11 @@ canvas {
   width: 50%;
 }
 
-#random_humanoid .second_stack .humanoid_teaser .teaser_details_container:not(:first-child) {
-    display: inline-flex;
+#random_humanoid
+  .second_stack
+  .humanoid_teaser
+  .teaser_details_container:not(:first-child) {
+  display: inline-flex;
 }
 
 #random_humanoid .feature-content-active {

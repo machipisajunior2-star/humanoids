@@ -52,8 +52,7 @@ export default function About() {
                       fontSize: "1em",
                     },
                     ":hover": {
-                      color:
-                        colorState.text === "#000000" ? "black" : "white",
+                      color: colorState.text === "#000000" ? "black" : "white",
                     },
                   })}
                 >

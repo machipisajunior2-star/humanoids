@@ -21,7 +21,7 @@
 
 .youtube_iframe {
   width: 100%;
-  min-height: 95vh;
+  height: 93vh;
   border-radius: 12.5px;
 }
 
@@ -42,7 +42,10 @@
   width: 100%;
   height: auto;
   border-radius: 12.5px;
-  max-height: 95vh;
+}
+
+.video_button .video_thumbnail {
+  height: 93vh;
 }
 
 .play_button {
@@ -122,9 +125,22 @@
   .play_button {
     left: 45%;
   }
+
+  .video_button .video_thumbnail {
+    height: 70vh;
+  }
+  .youtube_iframe {
+    height: 70vh;
+  }
 }
 
 @media only screen and (max-width: 800px) {
+  .video_button .video_thumbnail {
+    height: 50vh;
+  }
+  .youtube_iframe {
+    height: 50vh;
+  }
   .humanoid_videos_section {
     display: block;
     margin: 6vh 0 6vh 0;
@@ -136,7 +152,7 @@
 
   .thumb_scroller .video_thumbnail {
     width: stretch;
-    height: 25vh;
+    height: 20vh;
   }
 
   .youtube_player_container {
@@ -177,21 +193,15 @@
     width: 50px;
     height: 50px;
   }
-  .youtube_iframe {
-    min-height: 70vh;
-  }
 }
 
 @media only screen and (max-width: 450px) {
   .thumb_scroller .video_thumbnail {
-    height: 11vh;
+    height: 15vh;
   }
   .play_button {
     left: 38%;
     padding: 8px 8px 8px 11px;
-  }
-  .youtube_iframe {
-    min-height: 45vh;
   }
 }
 

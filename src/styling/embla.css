@@ -1,6 +1,4 @@
 .embla {
-  /* max-width: 48rem; */
-  /* margin: auto; */
   --slide-height: 29rem;
   --slide-spacing: 0.5rem;
   --slide-size: 98%;
@@ -36,7 +34,6 @@
   align-items: center;
   justify-content: center;
   height: 98%;
-  /* width: 100%; */
   user-select: none;
 }
 
@@ -167,16 +164,9 @@
     height: inherit;
     width: inherit;
   }
-
-  /* .embla__slide__number {
-  justify-content: flex-start;
-} */
 }
 
 @media only screen and (max-width: 550px) {
-  /* .embla__viewport {
-    height: 55vh;
-} */
   .embla_slide_number {
     height: 110%;
   }

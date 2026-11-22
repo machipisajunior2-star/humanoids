@@ -7,7 +7,7 @@ import {
 const storage = JSON.parse(localStorage.getItem("news"));
 const initialState = {
   loading: false,
-  news: [],
+  news: {},
   error: "",
 };
 

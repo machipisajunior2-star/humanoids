@@ -20,7 +20,11 @@ export default function Videos(props) {
     activeVideo: "",
   });
   if (videoSelection.videoIds !== video_id) {
-    setVideoSelection({ videoIds: video_id, focusVideo: video_id[0], activeVideo: "" });
+    setVideoSelection({
+      videoIds: video_id,
+      focusVideo: video_id[0],
+      activeVideo: "",
+    });
   }
   const { focusVideo, activeVideo } =
     videoSelection.videoIds === video_id
@@ -47,7 +51,10 @@ export default function Videos(props) {
   function handleClick() {
     playerRef.current.style.display = "none";
     document.querySelector("#yt").style.display = "flex";
-    setVideoSelection((selection) => ({ ...selection, activeVideo: focusVideo }));
+    setVideoSelection((selection) => ({
+      ...selection,
+      activeVideo: focusVideo,
+    }));
     youtubePlayerRef.current?.playVideo?.();
   }
   function handle_thumb(video) {
