@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { HiArrowRight } from "react-icons/hi";
-import "../styling/about.css"
+import "../styling/about.css";
 
 export default function About() {
   const colorState = useSelector((state) => state.themeColor.colorPalette);
@@ -49,8 +49,8 @@ export default function About() {
                   fontSize: "1em",
                 },
                 ":hover": {
-                    color: colorState.text === "#000000" ? "black" : "white"
-                }
+                  color: colorState.text === "#000000" ? "black" : "white",
+                },
               })}
             >
               Contact
@@ -107,12 +107,19 @@ export default function About() {
           explaining it clearly, and creating an experience that helps people
           learn.
         </p>
-        <Link to="/contact" className="contact_link_button" css={css({
-            backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
-        })}>Contact Me
-                    <span>
-                      <HiArrowRight />
-                    </span></Link>
+        <Link
+          to="/contact"
+          className="contact_link_button"
+          css={css({
+            backgroundColor:
+              colorState.text === "#000000" ? "#CFCFCA" : "#404040",
+          })}
+        >
+          Contact Me
+          <span>
+            <HiArrowRight />
+          </span>
+        </Link>
         <h2>Who this site is for</h2>
         <p>
           Humanoids is for beginners taking their first steps into robotics,

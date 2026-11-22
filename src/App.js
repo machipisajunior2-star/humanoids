@@ -10,7 +10,7 @@ import Category from "./pages/Category";
 import Search from "./pages/Search";
 import Learn from "./pages/Learn";
 import Article from "./pages/Article";
-import News from "./pages/News"
+import News from "./pages/News";
 import Error404 from "./pages/Error404";
 
 function App() {

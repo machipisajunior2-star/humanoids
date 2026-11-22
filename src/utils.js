@@ -40,9 +40,9 @@ export function getVideoData$(ytId) {
       embed.contentWindow.postMessage(message, "https://www.youtube.com");
     };
     function parseData(e) {
-        const { event, id, info } = JSON?.parse(e?.data);
-        if (event === "initialDelivery" && id === 99)
-          observer.next(info.videoData);
+      const { event, id, info } = JSON?.parse(e?.data);
+      if (event === "initialDelivery" && id === 99)
+        observer.next(info.videoData);
     }
     document.body.appendChild(embed);
     window.addEventListener("message", parseData);

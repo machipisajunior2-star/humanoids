@@ -6,11 +6,11 @@ import News from "../../pages/News";
 
 test("renders an h1", async () => {
   render(
-      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Provider store={store}>
-          <News />
+        <News />
       </Provider>
-      </Router>,
+    </Router>,
   );
   const h1 = await screen.findByText(/Humanoid News/);
   expect(h1).toHaveTextContent("Humanoid News");

@@ -26,7 +26,8 @@ export const fetchProductFailure = (error) => {
 export const fetchProduct = (slug) => {
   return (dispatch) => {
     dispatch(fetchProductRequest());
-    axios.get(`https://botlero.com/api/robots/${slug}`)
+    axios
+      .get(`https://botlero.com/api/robots/${slug}`)
       .then((response) => {
         const product = response.data;
         dispatch(fetchProductSuccess(product));

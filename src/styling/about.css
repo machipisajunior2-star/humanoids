@@ -79,23 +79,23 @@
     grid-template-columns: 100%;
   }
 
-  .info_section_navigation ul, .info_section_navigation header {
+  .info_section_navigation ul,
+  .info_section_navigation header {
     display: none;
   }
-  
-.info_container {
-  border-left: none;
-  padding-left: 0;
-}    
 
-.info_section_wrapper {
-  margin: 10px 10px 16px 10px;
-}
-}
+  .info_container {
+    border-left: none;
+    padding-left: 0;
+  }
 
+  .info_section_wrapper {
+    margin: 10px 10px 16px 10px;
+  }
+}
 
 @media only screen and (max-width: 300px) {
-.info_container h1 {
-  font-size: 40px;
-}
+  .info_container h1 {
+    font-size: 40px;
+  }
 }

@@ -10,7 +10,7 @@ export default function ArticleComponent(props) {
   const themeColorState = useSelector(
     (state) => state.themeColor.colorPalette.text,
   );
-  const {id} = props
+  const { id } = props;
 
   return (
     <article

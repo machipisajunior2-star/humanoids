@@ -133,7 +133,7 @@
   position: absolute;
   display: flex;
   align-items: center;
-  content: '';
+  content: "";
 }
 
 .embla__dot:before {
@@ -150,88 +150,86 @@
 }
 
 @media only screen and (max-width: 1100px) {
-    .embla {
-        --slide-spacing: 8.5rem;
-        --slide-size: 57%;
-        width: 60%;
-    }
+  .embla {
+    --slide-spacing: 8.5rem;
+    --slide-size: 57%;
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 920px) {
-.embla {
-        --slide-spacing: 0.5rem;
-        --slide-size: 100%;
-        width: 100%;
-    }
+  .embla {
+    --slide-spacing: 0.5rem;
+    --slide-size: 100%;
+    width: 100%;
+  }
   .embla_humanoid_image {
-  height: inherit;
-  width: inherit;
-}
+    height: inherit;
+    width: inherit;
+  }
 
-/* .embla__slide__number {
+  /* .embla__slide__number {
   justify-content: flex-start;
 } */
 }
 
 @media only screen and (max-width: 550px) {
-/* .embla__viewport {
+  /* .embla__viewport {
     height: 55vh;
 } */
-.embla_slide_number {
+  .embla_slide_number {
     height: 110%;
-}
+  }
 }
 
 @media only screen and (max-width: 450px) {
-
-    .embla {
-        --slide-spacing: 0rem;
-    }
-    .embla__container > :first-child .embla_humanoid_image {
-        height: initial;
-        width: 150%;
-    }
-    .embla_humanoid_image {
-      height: inherit;
-      width: auto;
-    }
+  .embla {
+    --slide-spacing: 0rem;
+  }
+  .embla__container > :first-child .embla_humanoid_image {
+    height: initial;
+    width: 150%;
+  }
+  .embla_humanoid_image {
+    height: inherit;
+    width: auto;
+  }
   .embla__dot:before,
-.embla__dot:after {
-  width: 0.5rem;
-  height: 0.5rem;
+  .embla__dot:after {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  .embla__dot {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
 }
-.embla__dot {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-}
-
 
 @media only screen and (max-width: 330px) {
-.embla__button {
+  .embla__button {
     width: 2.6rem;
     height: 2.6rem;
-}
+  }
   .embla__dot:before,
-.embla__dot:after {
-  width: 0.2rem;
-  height: 0.2rem;
-}
-.embla__dot {
-  width: 1rem;
-  height: 1rem;
-}
-.embla__controls {
+  .embla__dot:after {
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+  .embla__dot {
+    width: 1rem;
+    height: 1rem;
+  }
+  .embla__controls {
     gap: 0rem;
     margin-top: 0rem;
-}
-.embla__buttons {
+  }
+  .embla__buttons {
     gap: 0rem;
-}
+  }
 }
 
 @media only screen and (max-width: 250px) {
-.best_for_scroller_container .embla__slide__number {
-  font-size: 0.8rem;
-}
+  .best_for_scroller_container .embla__slide__number {
+    font-size: 0.8rem;
+  }
 }

@@ -38,9 +38,9 @@ function NavComponent() {
     } else {
       dispatch(setCategoryColor(""));
     }
-    dispatch(setNavigationColor(location.pathname))
+    dispatch(setNavigationColor(location.pathname));
     window.scrollTo(0, 0);
-  }, [dispatch, location.pathname])
+  }, [dispatch, location.pathname]);
 
   useEffect(() => {
     const handleClick = (event) => {
@@ -102,7 +102,7 @@ function NavComponent() {
         .removeAttribute("open");
       setIsModalOpen(false);
       setIsColorPickerOpen(false);
-      if (window.innerWidth < 750) setIsSearchOpen(false)
+      if (window.innerWidth < 750) setIsSearchOpen(false);
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -112,7 +112,7 @@ function NavComponent() {
 
   useEffect(() => {
     const handleResize = (event) => {
-    const menu_button = document.querySelector(".mobile-menu");
+      const menu_button = document.querySelector(".mobile-menu");
       const modal = document.querySelector(".modal");
       const color_picker = document.querySelector(".color-pick");
       const theme_selector = document.querySelector(".theme-selector");
@@ -131,7 +131,8 @@ function NavComponent() {
         }
       }
       if (window.innerWidth > 750) {
-        if (theme_selector && !isSearchOpen) theme_selector.style.display = "flex";
+        if (theme_selector && !isSearchOpen)
+          theme_selector.style.display = "flex";
       }
       if (window.innerWidth < 950) {
         if (!isSearchOpen) menu_button.style.display = "flex";
@@ -146,7 +147,7 @@ function NavComponent() {
         }
       }
       if (window.innerWidth > 950) {
-          if (menu_button) menu_button.style.display = "none";
+        if (menu_button) menu_button.style.display = "none";
         if (modal) modal.style.display = "none";
         theme_selector.style.display = "flex";
         if (isModalOpen) {

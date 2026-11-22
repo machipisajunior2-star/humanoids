@@ -5,11 +5,11 @@ test("render videos", () => {
   render(
     <Videos
       video_id={[
-      "uVcBa6NXAbk",
-      "LTYMWadOW7c",
-      "j31dmodZ-5c",
-      "f3c4mQty_so",
-      "NIHU7Y8-8k4"
+        "uVcBa6NXAbk",
+        "LTYMWadOW7c",
+        "j31dmodZ-5c",
+        "f3c4mQty_so",
+        "NIHU7Y8-8k4",
       ]}
       color="#4C2365"
       theme={{
@@ -18,8 +18,6 @@ test("render videos", () => {
       }}
     />,
   );
-  const text = screen.getAllByRole(
-    "button", "1x NEO"
-  );
-  expect(text.length).toBe(5)
+  const text = screen.getAllByRole("button", "1x NEO");
+  expect(text.length).toBe(5);
 });

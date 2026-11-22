@@ -12,7 +12,7 @@ export default function FeautureHumanoid(props) {
   let navigate = useNavigate();
   const themeColorState = useSelector((state) => state.themeColor.colorPalette);
   const [isActive, setIsActive] = useState(false);
-  const {id} = props;
+  const { id } = props;
   return (
     <section
       className={

@@ -13,10 +13,8 @@ test("renders an h3", () => {
     </Router>,
   );
   const h3 = screen.getByText(/RELATED COMPANIES THAT PRODUCE HUMADOIDS/);
-  expect(h3).toHaveTextContent(
-    "RELATED COMPANIES THAT PRODUCE HUMADOIDS",
-  );
-  
+  expect(h3).toHaveTextContent("RELATED COMPANIES THAT PRODUCE HUMADOIDS");
+
   const h1 = screen.getByText(/HUMANOIDS/);
   expect(h1).toHaveTextContent("HUMANOIDS");
 });

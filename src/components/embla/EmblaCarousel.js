@@ -14,23 +14,22 @@ const EmblaCarousel = (props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [dotCount, setDotCount] = useState(0);
 
-  const { selectedIndex } =
-      useDotButton(emblaApi);
+  const { selectedIndex } = useDotButton(emblaApi);
 
-    const updateDotCount = useCallback(() => {
-        if (!emblaApi) return;
-        setDotCount(emblaApi.scrollSnapList().length);
-        emblaApi.scrollTo(0, true | false, "forward" | "backward");
-      }, [emblaApi]);
-
-    useEffect(() => {
+  const updateDotCount = useCallback(() => {
     if (!emblaApi) return;
-    emblaApi.on('slidesChanged', updateDotCount);
+    setDotCount(emblaApi.scrollSnapList().length);
+    emblaApi.scrollTo(0, true | false, "forward" | "backward");
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    emblaApi.on("slidesChanged", updateDotCount);
 
     updateDotCount();
 
     return () => {
-      emblaApi.off('slidesChanged', updateDotCount);
+      emblaApi.off("slidesChanged", updateDotCount);
     };
   }, [emblaApi, updateDotCount]);
 

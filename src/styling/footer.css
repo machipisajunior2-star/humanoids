@@ -1,19 +1,19 @@
 :root {
-    --num-items: 23;
-    --item-position: 0;
+  --num-items: 23;
+  --item-position: 0;
 }
 
 .footer_section_wrapper {
-    margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 .footer_section_wrapper small {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .footer_section_wrapper a small {
-    font-size: 11px;
-    font-weight: 100;
+  font-size: 11px;
+  font-weight: 100;
 }
 
 .marquee {
@@ -38,7 +38,7 @@
 }
 
 .marquee-track:hover .marquee-item {
- animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .marquee-item {
@@ -47,7 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #FF4C00;
+  border: 1px solid #ff4c00;
   border-radius: 12.5px;
   background-color: rgba(117, 117, 117, 0.178);
   color: #fff;
@@ -59,7 +59,7 @@
 }
 
 .marquee-item:hover {
-  outline: 5px solid #FF4C00;
+  outline: 5px solid #ff4c00;
 }
 
 .company_logo_img {
@@ -84,13 +84,13 @@
 }
 
 .foot_nav_con div {
-    margin-top: 13px;
-    margin-bottom: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
 
 .foot_nav_con a {
-    display: inline-flex;
-    align-items: center;
+  display: inline-flex;
+  align-items: center;
 }
 
 .humanoid_companies_container small {
@@ -98,59 +98,57 @@
 }
 
 .footer_nav_link_container {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    list-style: none;
-    margin-right: 30px;
-    font-size: small;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin-right: 30px;
+  font-size: small;
 }
 
 .footer_nav_link {
-    padding: 10px;
-    border-radius: 50%;
-    background-color: rgba(128, 128, 128, 0.158);
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.158);
 }
 
 .footer_nav_link:hover {
-  background-color: #FF4C00;
+  background-color: #ff4c00;
 }
 
-
-  @media only screen and (max-width: 800px) {
-    .foot_nav_con {
+@media only screen and (max-width: 800px) {
+  .foot_nav_con {
     display: block;
-   }
-   .foot_nav_con div {
+  }
+  .foot_nav_con div {
     margin-top: 13px;
     margin-bottom: 13px;
+  }
 }
+
+@media only screen and (max-width: 500px) {
+  .humanoid_companies_container small {
+    margin: 30px 8px;
+  }
+  .footer_section_wrapper a small {
+    font-size: 8px;
   }
 
-  @media only screen and (max-width: 500px) {
-.humanoid_companies_container small {
-  margin: 30px 8px;
-}
-.footer_section_wrapper a small {
-    font-size: 8px;
-}
-
-.footer_nav_link_container {
+  .footer_nav_link_container {
     margin-right: 0;
     padding-left: 16px;
-}
-}
-
-
-  @media only screen and (max-width: 260px) {
-    .footer_nav_link_container {
-        padding-left: 6px;
-        flex-wrap: wrap;
-    }
-    .foot_nav_con a {
-        display: block;
-    }
-    .foot_nav_con .heading h1 {
-        padding: 0;
-    }
   }
+}
+
+@media only screen and (max-width: 260px) {
+  .footer_nav_link_container {
+    padding-left: 6px;
+    flex-wrap: wrap;
+  }
+  .foot_nav_con a {
+    display: block;
+  }
+  .foot_nav_con .heading h1 {
+    padding: 0;
+  }
+}

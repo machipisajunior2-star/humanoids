@@ -9,7 +9,7 @@ import NewsComponent from "../components/NewsComponent";
 import HumanoidComponent from "../components/HumanoidComponent";
 import { ThreeCircles } from "react-loader-spinner";
 import EmblaCarousel from "../components/embla/EmblaCarousel";
-import EmblaScroller from "../components/embla/EmblaScroller"
+import EmblaScroller from "../components/embla/EmblaScroller";
 import { fetchNews } from "../redux/news/newsActions";
 import humanoids from "../data/data.json";
 import { colorPicker, removeDuplicatesByProperty } from "../utils";
@@ -20,14 +20,18 @@ export default function Product() {
   let navigate = useNavigate();
   let { productSlag } = useParams();
   const dispatch = useDispatch();
-    const loading = useSelector((state) => state.news.loading);
-    const newsData = useSelector((state) => state.news?.news?.news ?? null);
+  const loading = useSelector((state) => state.news.loading);
+  const newsData = useSelector((state) => state.news?.news?.news ?? null);
   const data = useSelector((state) => state.product.product);
   const themeColorState = useSelector((state) => state.themeColor.colorPalette);
-  const [humanoidData, setHumanoidData] = useState(humanoids.filter(
-    (humanoid) => humanoid.slag === productSlag,
-  ))
-  const relatedHumanoids = humanoids.filter((humanoid) => humanoid.useType === humanoidData[0].useType && humanoid.name !== humanoidData[0].name)
+  const [humanoidData, setHumanoidData] = useState(
+    humanoids.filter((humanoid) => humanoid.slag === productSlag),
+  );
+  const relatedHumanoids = humanoids.filter(
+    (humanoid) =>
+      humanoid.useType === humanoidData[0].useType &&
+      humanoid.name !== humanoidData[0].name,
+  );
 
   const OPTIONS = { axis: "y" };
   const SLIDES = humanoidData[0].image;

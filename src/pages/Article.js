@@ -5,15 +5,13 @@ import { useParams, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import parse from "html-react-parser";
 import articles from "../data/articles.json";
-import "../styling/article.css"
+import "../styling/article.css";
 
 export default function Article() {
   let { article } = useParams();
-  const ref = useRef()
+  const ref = useRef();
   const themeColorState = useSelector((state) => state.themeColor.colorPalette);
-  const articleData = articles.filter(
-    (data) => data.title === article,
-  );
+  const articleData = articles.filter((data) => data.title === article);
   let sections = [];
   if (articleData)
     articleData[0].sections.forEach((element, i) => {
@@ -21,40 +19,39 @@ export default function Article() {
         <div className="article_paragraph_section" key={`paragraph_${i}`}>
           <h2>{parse(element.title)}</h2>
           <div>{parse(element.content)}</div>
-        </div>
+        </div>,
       );
     });
 
-    
-    const monthsArr = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ];
+  const monthsArr = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
 
-    const currentDateObj = new Date(articleData[0].date);
-    const day = currentDateObj.getDate();
-    const month = monthsArr[currentDateObj.getMonth()];
-    const year = currentDateObj.getFullYear();
+  const currentDateObj = new Date(articleData[0].date);
+  const day = currentDateObj.getDate();
+  const month = monthsArr[currentDateObj.getMonth()];
+  const year = currentDateObj.getFullYear();
 
-    useEffect(() => {
-      ref.current.addEventListener("click", (e) => {
-        if (
-          e.target.tagName.toLowerCase() !== "summary" &&
-          e.target.tagName.toLowerCase() !== undefined
-         )
-          ref.current.removeAttribute("open");
-      });
-    }, [])
+  useEffect(() => {
+    ref.current.addEventListener("click", (e) => {
+      if (
+        e.target.tagName.toLowerCase() !== "summary" &&
+        e.target.tagName.toLowerCase() !== undefined
+      )
+        ref.current.removeAttribute("open");
+    });
+  }, []);
 
   return (
     <main id="article_wrapper">
@@ -138,7 +135,10 @@ export default function Article() {
         </header>
         <div className="article_stamp">
           <small>
-            Written by <strong style={{color: themeColorState.text}}>{parse(articleData[0].author)}</strong>
+            Written by{" "}
+            <strong style={{ color: themeColorState.text }}>
+              {parse(articleData[0].author)}
+            </strong>
           </small>
           <time>
             <small>
@@ -148,7 +148,9 @@ export default function Article() {
           </time>
         </div>
         <div className="article_page_details_container">
-          {articleData[0].image && <img src={articleData[0].image} alt={articleData[0].title} />}
+          {articleData[0].image && (
+            <img src={articleData[0].image} alt={articleData[0].title} />
+          )}
           <div>{parse(articleData[0].details)}</div>
         </div>
         {sections}

@@ -25,7 +25,6 @@ const EmblaScroller = (props) => {
 
   return (
     <div className="embla">
-
       <div className="embla__controls">
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
@@ -41,7 +40,10 @@ const EmblaScroller = (props) => {
                 index === selectedIndex ? " embla__dot--selected" : "",
               )}
               css={css({
-                "&:after": { borderColor: props.color, backgroundColor: props.color },
+                "&:after": {
+                  borderColor: props.color,
+                  backgroundColor: props.color,
+                },
               })}
             />
           ))}

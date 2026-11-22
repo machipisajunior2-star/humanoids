@@ -35,4 +35,4 @@ const newsReducer = (state = initialState, action) => {
   }
 };
 
-export default newsReducer
+export default newsReducer;

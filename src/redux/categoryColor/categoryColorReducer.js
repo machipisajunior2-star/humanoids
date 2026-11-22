@@ -1,9 +1,9 @@
 import { CHANGE_CATEGORY_COLOR } from "./categoryColorType";
 
 const initialState = {
-    color: "",
-    category: ""
-}
+  color: "",
+  category: "",
+};
 
 const categoryColorChangeReducer = (state = initialState, action) => {
   switch (action.type) {

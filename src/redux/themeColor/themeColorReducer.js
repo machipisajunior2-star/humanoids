@@ -1,7 +1,7 @@
 import theme_color from "../../data/theme-color-data.json";
-import {CHANGE_COLOR} from "./themeColorType";
+import { CHANGE_COLOR } from "./themeColorType";
 
-const storage = JSON.parse(localStorage.getItem("colorPalette"))
+const storage = JSON.parse(localStorage.getItem("colorPalette"));
 const initialState = {
   colorPalette: storage
     ? storage
@@ -23,6 +23,6 @@ const colorChangeReducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
-export default colorChangeReducer
+export default colorChangeReducer;

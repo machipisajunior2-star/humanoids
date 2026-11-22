@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useSelector } from "react-redux";
 import humanoidsData from "../data/data.json";
@@ -21,7 +20,11 @@ function Humanoids() {
       </header>
       <section className="category_page_container">
         {humanoidsData.map((humanoid, i) => (
-          <HumanoidComponent data={humanoid} i={i} key={`humanoid_teaser_${i}`} />
+          <HumanoidComponent
+            data={humanoid}
+            i={i}
+            key={`humanoid_teaser_${i}`}
+          />
         ))}
       </section>
     </main>

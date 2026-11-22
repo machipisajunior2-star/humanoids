@@ -1,7 +1,11 @@
 /**
  * @jest-environment jsdom
  */
-import { colorPicker, filterByEitherProperty, removeDuplicatesByProperty } from "../utils";
+import {
+  colorPicker,
+  filterByEitherProperty,
+  removeDuplicatesByProperty,
+} from "../utils";
 import data from "../data/data.json";
 
 const testArray = [
@@ -30,6 +34,6 @@ test("Filter data by two properties", () => {
 });
 
 test("remove duplicates by property", () => {
-    const data = removeDuplicatesByProperty(testArray, "name");
-    expect(data.length).toBe(testArray.length - 1);
+  const data = removeDuplicatesByProperty(testArray, "name");
+  expect(data.length).toBe(testArray.length - 1);
 });

@@ -1,15 +1,15 @@
 .category_page_wrapper {
-    margin: 20px 16px 32px 16px;
+  margin: 20px 16px 32px 16px;
 }
 
 .category_heading {
-    margin: 15px 60px 0 32px;
-    font-size: 74px;
-    color: #27C3AE;
+  margin: 15px 60px 0 32px;
+  font-size: 74px;
+  color: #27c3ae;
 }
 
 .category_page_container {
-   display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: min-content;
   grid-row-gap: 20px;
@@ -20,59 +20,59 @@
 }
 
 .category_page_container .humanoid_teaser img {
-    height: auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .category_page_container .humanoid_teaser {
-    padding: 0 20px 0 10px;
+  padding: 0 20px 0 10px;
 }
 
 .category_page_container .humanoid_teaser:not(:nth-child(3n)) {
-    border-right: 1px solid #404040;
+  border-right: 1px solid #404040;
 }
 
-  @media only screen and (max-width: 920px) {
-.category_page_wrapper {
+@media only screen and (max-width: 920px) {
+  .category_page_wrapper {
     margin: 20px 16px 32px 16px;
-}
-.category_page_container {
-  grid-template-columns: repeat(2, 1fr);
-  border-left: none;
-  padding-left: 0;
-}
-
-.category_page_container .humanoid_teaser:nth-child(odd) {
-    border-right: 1px solid #404040;
-}
-.category_page_container .humanoid_teaser:nth-child(even) {
-    border-right: none;
-}
+  }
+  .category_page_container {
+    grid-template-columns: repeat(2, 1fr);
+    border-left: none;
+    padding-left: 0;
   }
 
-@media only screen and (max-width: 600px) {
-.category_page_wrapper {
-    margin: 10px 5px 12px 5px;
-}
-.category_page_container {
-  grid-template-columns: repeat(1, 1fr);
+  .category_page_container .humanoid_teaser:nth-child(odd) {
+    border-right: 1px solid #404040;
+  }
+  .category_page_container .humanoid_teaser:nth-child(even) {
+    border-right: none;
+  }
 }
 
-.category_page_container .humanoid_teaser:nth-child(odd) {
+@media only screen and (max-width: 600px) {
+  .category_page_wrapper {
+    margin: 10px 5px 12px 5px;
+  }
+  .category_page_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .category_page_container .humanoid_teaser:nth-child(odd) {
     border-right: none;
-}
-.category_heading {
+  }
+  .category_heading {
     margin: 30px 17px;
     font-size: 38px;
-}
+  }
 }
 
 @media only screen and (max-width: 250px) {
-.category_page_wrapper {
+  .category_page_wrapper {
     margin: 5px 5px 5px 3px;
-}
-.category_heading {
-      margin: 10px 6px;
-      font-size: 18px;
-}
+  }
+  .category_heading {
+    margin: 10px 6px;
+    font-size: 18px;
+  }
 }

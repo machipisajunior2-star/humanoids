@@ -14,17 +14,16 @@ test("renders an nav text", async () => {
   );
   const h1 = screen.getByText("HUMANOIDS");
   expect(h1).toHaveTextContent("HUMANOIDS");
-  
+
   const li = screen.queryAllByText("Categories");
   expect(li[0]).toHaveTextContent("Categories");
-  
+
   const li2 = screen.queryAllByText("Learn");
   expect(li2[0]).toHaveTextContent("Learn");
 
   const li3 = screen.queryAllByText("News");
   expect(li3[0]).toHaveTextContent("News");
 
-  
   const li4 = screen.queryAllByText("Search");
   expect(li4[0]).toHaveTextContent("Search");
 });

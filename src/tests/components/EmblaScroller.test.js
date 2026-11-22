@@ -18,10 +18,9 @@ test("renders buttons and text", async () => {
   const button = screen.getAllByRole("button");
   expect(button.length).toBe(2);
 
-  const p = screen.getAllByText(SLIDES[0])
-  expect(p[0]).toHaveTextContent(SLIDES[0])
+  const p = screen.getAllByText(SLIDES[0]);
+  expect(p[0]).toHaveTextContent(SLIDES[0]);
 
-  
   const p2 = screen.getAllByRole("paragraph");
   expect(p2.length).toBe(4);
 });

@@ -63,8 +63,8 @@ export default function Videos(props) {
   useEffect(() => {
     getVideoData(video_id[0]);
     setActiveThumbnailImage(thumbnail(video_id[0]));
-    setFocusVideo(video_id[0])
-    setActiveVideo("")
+    setFocusVideo(video_id[0]);
+    setActiveVideo("");
     document.querySelector("#yt").style.display = "none";
     playerRef.current.style.display = "flex";
   }, [video_id]);
@@ -95,7 +95,9 @@ export default function Videos(props) {
         </figcaption>
       </figure>
       <div className="video_otptions">
-        <h3 className="more_videos_label" style={{color: color}}>MORE VIDEOS</h3>
+        <h3 className="more_videos_label" style={{ color: color }}>
+          MORE VIDEOS
+        </h3>
         <div className="thumbs">
           <div className="thumb_scroller">
             {video_id.slice(1).map((video, i) => (
@@ -105,15 +107,17 @@ export default function Videos(props) {
                 onClick={() => handle_thumb(video)}
                 css={css({
                   ":hover .video_thumbnail": {
-                    border: `5px solid ${theme.text}`
-                  }
+                    border: `5px solid ${theme.text}`,
+                  },
                 })}
               >
                 <img
                   className="video_thumbnail"
                   src={thumbnail(video)}
                   alt={`${data[0].name} 1`}
-                  style={{ border: focusVideo === video ? `5px solid ${color}` : ""}}
+                  style={{
+                    border: focusVideo === video ? `5px solid ${color}` : "",
+                  }}
                 />
               </button>
             ))}

@@ -8,7 +8,7 @@ import { colorPicker } from "../utils";
 export default function HumanoidComponent(props) {
   const { data, i } = props;
   let navigate = useNavigate();
-    const themeColorState = useSelector((state) => state.themeColor.colorPalette);
+  const themeColorState = useSelector((state) => state.themeColor.colorPalette);
   return (
     <article
       className="humanoid_teaser"

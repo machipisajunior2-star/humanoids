@@ -17,8 +17,12 @@ export default function Learn() {
           <h2>FEATURED</h2>
         </header>
         <div className="articles_container">
-          <div className="article_container"><ArticleComponent id={4} /></div>
-          <div className="article_container"><ArticleComponent id={5} /></div>
+          <div className="article_container">
+            <ArticleComponent id={4} />
+          </div>
+          <div className="article_container">
+            <ArticleComponent id={5} />
+          </div>
         </div>
       </section>
       <section

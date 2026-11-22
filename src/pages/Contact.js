@@ -3,51 +3,54 @@ import { css } from "@emotion/react";
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import emailjs from '@emailjs/browser';
-import "../styling/contact.css"
+import emailjs from "@emailjs/browser";
+import "../styling/contact.css";
 
 export default function Contact() {
   const colorState = useSelector((state) => state.themeColor.colorPalette);
-  const ref = useRef(null)
-  const buttonRef = useRef(null)
-  
+  const ref = useRef(null);
+  const buttonRef = useRef(null);
+
   useEffect(() => {
     ref.current?.addEventListener("submit", function (event) {
-        event.preventDefault();
-        event.stopImmediatePropagation();
+      event.preventDefault();
+      event.stopImmediatePropagation();
 
-        buttonRef.current.innerHTML = "Sending...";
+      buttonRef.current.innerHTML = "Sending...";
 
-        ref.current.querySelectorAll("span")?.forEach((span) => {
-            span.remove()
+      ref.current.querySelectorAll("span")?.forEach((span) => {
+        span.remove();
+      });
+      const serviceID = "service_2d60jxd";
+      const templateID = "template_2grdtys";
+      const public_key = "AKw6Y-XTag8YhNMWL";
+      const inputs = ref.current?.querySelectorAll("input, textarea");
+
+      emailjs
+        .sendForm(serviceID, templateID, this, {
+          publicKey: public_key,
         })
-        const serviceID = "service_2d60jxd";
-        const templateID = "template_2grdtys";
-        const public_key = "AKw6Y-XTag8YhNMWL";
-        const inputs = ref.current?.querySelectorAll("input, textarea");
-
-        emailjs.sendForm(serviceID, templateID, this, {
-  publicKey: public_key}).then(
-        () => {
+        .then(
+          () => {
             buttonRef.current.innerHTML = "Send Email";
             const newEl = document.createElement("span");
-            newEl.className = "successful_form_submit"
+            newEl.className = "successful_form_submit";
             newEl.textContent = "Success! ✓ \n Thank You for Reaching Out";
-            ref.current.appendChild(newEl)
+            ref.current.appendChild(newEl);
             inputs.forEach((field) => {
               field.value = "";
             });
-        },
-        (err) => {
+          },
+          (err) => {
             buttonRef.current.innerHTML = "Send Email";
             const newEl = document.createElement("span");
             newEl.className = "failed_form_submit";
             newEl.textContent = err.text;
             ref.current.appendChild(newEl);
-        },
+          },
         );
     });
-  }, [buttonRef])
+  }, [buttonRef]);
 
   return (
     <main className="info_section_wrapper">
