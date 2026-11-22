@@ -45,12 +45,12 @@ const EmblaCarousel = (props) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index, i) => (
-            <div className="embla__slide" key={`${index}_${i}`}>
+          {slides.map((image, i) => (
+            <div className="embla__slide" key={`${image}_${i}`}>
               <div className="embla__slide__number">
                 <img
                   className="embla_humanoid_image"
-                  src={index}
+                  src={image}
                   alt={`humanoid ${i}`}
                 />
               </div>

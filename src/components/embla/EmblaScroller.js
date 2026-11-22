@@ -49,10 +49,10 @@ const EmblaScroller = (props) => {
       </div>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index, i) => (
-            <div className="embla__slide" key={`${index}_${i}`}>
+          {slides.map((text, i) => (
+            <div className="embla__slide" key={`${text}_${i}`}>
               <div className="embla__slide__number">
-                <p>{index}</p>
+                <p>{text}</p>
               </div>
             </div>
           ))}
