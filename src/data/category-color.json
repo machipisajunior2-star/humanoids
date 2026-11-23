@@ -1,0 +1,18 @@
+[
+  {
+    "color": "#4C2365",
+    "category": "consumer"
+  },
+  {
+    "color": "#2E7D32",
+    "category": "professional"
+  },
+  {
+    "color": "#E85D75",
+    "category": "research"
+  },
+  {
+    "color": "#F5B52E",
+    "category": "education"
+  }
+]

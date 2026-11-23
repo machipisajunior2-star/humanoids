@@ -1,0 +1,32 @@
+[
+  {
+    "background": "#ECECE9",
+    "text": "#000000",
+    "id": "01"
+  },
+  {
+    "background": "#1F2937",
+    "text": "#d9d9d9",
+    "id": "02"
+  },
+  {
+    "background": "#092328",
+    "text": "#D8E1E7",
+    "id": "03"
+  },
+  {
+    "background": "#523737",
+    "text": "#d9d9d9",
+    "id": "04"
+  },
+  {
+    "background": "#1A1A1D",
+    "text": "#d9d9d9",
+    "id": "05"
+  },
+  {
+    "background": "#1B211A",
+    "text": "#d9d9d9",
+    "id": "06"
+  }
+]

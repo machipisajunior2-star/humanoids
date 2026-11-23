@@ -8,12 +8,20 @@
       "type": "image/x-icon"
     },
     {
+<<<<<<< HEAD
       "src": "logo192.png",
+=======
+      "src": "robot2.png",
+>>>>>>> 38c93ac16b89ba274db86d70341e858204b88f71
       "type": "image/png",
       "sizes": "192x192"
     },
     {
+<<<<<<< HEAD
       "src": "logo512.png",
+=======
+      "src": "humanoid.png",
+>>>>>>> 38c93ac16b89ba274db86d70341e858204b88f71
       "type": "image/png",
       "sizes": "512x512"
     }

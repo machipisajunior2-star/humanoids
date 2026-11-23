@@ -1,0 +1,670 @@
+[
+  {
+    "name": "1X NEO",
+    "slag": "1x-neo",
+    "useType": "CONSUMER",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/1x-neo1.avif",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/1x-tech-neo2.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/1x-neo3.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/1x-neo4.webp",
+      "https://www.1x.tech/_next/image?url=https:%2F%2Fcdn.sanity.io%2Fimages%2Fqka6yvsc%2Fproduction%2Ff8fe2d844edc62e4ab86f9613b281d93e21c0aaa-2048x1058.jpg%3Frect%3D281%2C0%2C1487%2C1058%26w%3D2024%26h%3D1440%26q%3D100%26fit%3Dmax%26auto%3Dformat&w=3840&q=100",
+      "https://www.1x.tech/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqka6yvsc%2Fproduction%2F8353aa0348b725209afd88990b7d51ca050176e2-4096x2730.jpg&w=750&q=90",
+      "https://www.1x.tech/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqka6yvsc%2Fproduction%2Ff195d31c59c24f31a4168efdf28526ea9a192ace-3351x2234.webp&w=750&q=90",
+      "https://www.1x.tech/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqka6yvsc%2Fproduction%2Ff0e1b1c66f15e9a25aadc120922d0f6d01dcd1eb-2731x4096.webp&w=750&q=90",
+      "https://www.1x.tech/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqka6yvsc%2Fproduction%2F2277cb5f5952be3c4c48b5bd66cafeccddb6ed27-3665x2062.webp&w=3840&q=100"
+    ],
+    "videos": [
+      "uVcBa6NXAbk",
+      "LTYMWadOW7c",
+      "j31dmodZ-5c",
+      "f3c4mQty_so",
+      "NIHU7Y8-8k4"
+    ],
+    "tagline": "1X NEO is a bipedal robot for consumer household applications."
+  },
+  {
+    "name": "AgiBot A2",
+    "slag": "agibot-a2",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/agibot_a2.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/agibot_2.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/agibot_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/agibot_a2_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/agibot_a2_5.webp",
+      "https://tse3.mm.bing.net/th/id/OIP.IyCV5wLla4kH_HqtFQWn8wHaMF?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ],
+    "videos": [
+      "hZ3naA_5010",
+      "h9Ec3hKPk5Q",
+      "9Y3qQNJuy3c",
+      "IX7vSZafztI",
+      "o_kGa2yKlF8"
+    ],
+    "tagline": "AgiBot A2 is a bipedal robot with 40 degrees of freedom and a 15 kg rated payload."
+  },
+  {
+    "name": "DexForce W1 Pro",
+    "slag": "dexforce-w1-pro",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://www.image2url.com/r2/default/images/1795024950088-92a91f56-664d-4473-932a-71bd26a83fd8.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175279/dexforce_w1_pro_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175344/dexforce_w1_pro_2.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175395/dexforce_w1_pro_3.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175461/dexforce_w1_pro_4.png",
+      "https://www.robotsj.cn/uploads/20250530/144d60fe2714a518decffe2c7608e24c.jpeg",
+      "https://www.cenr.com.cn/UploadFiles/hz/2025/8/202508092103375089.jpg"
+    ],
+    "videos": [
+      "ddI4U6dlxxM",
+      "gCCoNwgiZo8",
+      "SljRBxDi4_U",
+      "Q_VjHpxSSs",
+      "4KRmon2A49M"
+    ],
+    "tagline": "DexForce W1 Pro is a wheeled robot with 40 degrees of freedom and 300 TOPS AI compute."
+  },
+  {
+    "name": "DOBOT ATOM",
+    "slag": "dobot-atom",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175083/dobot_atom_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795174843/dobot_atom_2.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175002/dobot_atom_3.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175146/dobot_atom_5.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795174776/dobot_atom_1.jpg"
+    ],
+    "videos": [
+      "CrDyoVR2dnk",
+      "lntCendiCzU",
+      "-xK5l0kPyTE",
+      "DW9Z_exdhLY",
+      "FUPmQPSBMgY"
+    ],
+    "tagline": "DOBOT ATOM is a bipedal robot for professional use in manufacturing."
+  },
+  {
+    "name": "CASBOT 02",
+    "slag": "casbot-02",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/casbot_02_1.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/casbot_02_2.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/casbot_02_3.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/casbot_02_4.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/f_auto/q_auto/casbot_02_5.png"
+    ],
+    "videos": ["NNWmVmq5gs8", "sQLSAzqKGAk"],
+    "tagline": "CASBOT 02 is a bipedal robot with 37 degrees of freedom and a 3 kg rated payload."
+  },
+  {
+    "name": "CASBOT W1",
+    "slag": "casbot-w1",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795174428/casbot_w1_1.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795174486/casbot_w1_2.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795174529/casbot_w1_3.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795174631/casbot_w1_4.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795174702/casbot_w1_5.png",
+      "https://www.casbot.tech/images/w1/mobile/slice_4.png",
+      "https://www.casbot.tech/images/w1/mobile/slice_5.png",
+      "https://www.casbot.tech/images/w1/mobile/slice_7.png"
+    ],
+    "videos": ["awgV-Ldc7h8", "Ew_g8VqFFG0"],
+    "tagline": "CASBOT W1 is a wheeled robot with 20 degrees of freedom and a 10 kg rated payload."
+  },
+  {
+    "name": "Figure 03",
+    "slag": "figure-03",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175530/figure_03_1.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175579/figure_03_2.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175649/figure_03_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175692/figure_03_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175747/figure_03_5.jpg"
+    ],
+    "videos": [
+      "IlG3X8zRI2I",
+      "Eu5mYMavctM",
+      "e-31-KBBuXM",
+      "tv90GFM9RAo",
+      "jC3R4oxKd0M"
+    ],
+    "tagline": "Figure 03 can walk at 1.2 m/s, climb stairs, and has fall recovery"
+  },
+  {
+    "name": "Galbot G1",
+    "slag": "galbot-g1",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175813/galbot_g1_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175884/galbot_g1_2.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175941/galbot_g1_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795175999/galbot_g1_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176059/galbot_g1_5.webp",
+      "http://www.galbot.com/_nuxt/g1-spec-robot.BYUAn6RQ.jpg"
+    ],
+    "videos": [
+      "9ML9mOcHSQA",
+      "qgHTr3tGM6c",
+      "SgmhntLZaEE",
+      "6dePAlSyE7I",
+      "pDuXrn_hRKQ"
+    ],
+    "tagline": "Galbot G1 is a wheeled prototype robot with 21 degrees of freedom."
+  },
+  {
+    "name": "Galbot S1",
+    "slag": "galbot-s1",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176123/galbot_s1_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176174/galbot_s1_2.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176219/galbot_s1_3.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176265/galbot_s1_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176315/galbot_s1_5.webp",
+      "http://www.galbot.com/_nuxt/s1-spec-robot-v2.BSvgtlns.webp",
+      "https://cnevpost.com/wp-content/uploads/2026/06/2026062412581669.jpg"
+    ],
+    "videos": [
+      "3ezq-WJbPJw",
+      "hOxodzeRTz4",
+      "HiYJNRYAGEE",
+      "SgmhntLZaEE",
+      "9djYXR2bswY"
+    ],
+    "tagline": "Galbot S1 is a first-generation wheeled robot for logistics applications."
+  },
+  {
+    "name": "HMND 01 Alpha Bipedal",
+    "slag": "hmnd-01",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176417/HMND_01_Alpha_Bipedal_1.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176523/HMND_01_Alpha_Bipedal_2.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176601/HMND_01_Alpha_Bipedal_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176642/HMND_01_Alpha_Bipedal_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176737/HMND_01_Alpha_Bipedal_5.webp",
+      "https://thehumanoid.ai/wp-content/themes/SKLTech/src/assets/images/redisign/product/bipedal/bipedal-slider/10-11.jpg",
+      "https://thehumanoid.ai/wp-content/themes/SKLTech/src/assets/images/redisign/product/bipedal/Copy%20of%20Bipedal_Naked_Grey%201.png"
+    ],
+    "videos": [
+      "b6--2UeDx58",
+      "44WPYlAvIK0",
+      "uphgEEGPeV4",
+      "Tfaqwp7HpKA",
+      "LRcRZdnoW6A"
+    ],
+    "tagline": "HMND 01 Alpha Bipedal is a 179 cm, 90 kg bipedal robot with 29 degrees of freedom."
+  },
+  {
+    "name": "Isaac 1",
+    "slag": "weave-isaac-1",
+    "useType": "CONSUMER",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176832/Isaac_1_1.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176921/Isaac_1_2.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795176978/Isaac_1_3.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177020/isaac_1_4.jpg"
+    ],
+    "videos": [
+      "m7pZr90BQw4",
+      "ESV280GVsyI",
+      "57oW8RTSYMg",
+      "VxP6Hadxnyg",
+      "kShpnJTEhLM"
+    ],
+    "tagline": "Isaac 1 is a wheeled household robot for consumers, 175 cm tall and 40 kg."
+  },
+  {
+    "name": "LimX Luna",
+    "slag": "limx-luna",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177095/limx_luna_1.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177150/limx_luna_2.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177203/limx_luna_3.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177250/limx_luna_4.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177296/limx_luna_5.png",
+      "https://limx-video-oss.limxdynamics.com/limx-website/products/luna/luna-banner.png",
+      "https://limx-video-oss.limxdynamics.com/limx-website/products/luna/luna-6-4.png",
+      "https://limx-video-oss.limxdynamics.com/limx-website/products/luna/m_luna-3-1.png",
+      "https://imgs.sector.sk/files/novinky/0/2026/6-3-0-14-29/limx-luna-humanoidny-robot-kt-327899-8813745.jpg"
+    ],
+    "videos": [
+      "-lgo5xqgVko",
+      "WsxXTUttlXY",
+      "rCCOgsQCO14",
+      "EO6jIUtyMyk",
+      "bHEX7ESdZXk"
+    ],
+    "tagline": "LimX Luna is a bipedal robot with 27 degrees of freedom."
+  },
+  {
+    "name": "LimX Oli",
+    "slag": "limx-oli",
+    "useType": "RESEARCH",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177375/limx_oli_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177422/limx_oli_2.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177468/limx_oli_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177510/limx_oli_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177563/limx_oli_5.webp",
+      "https://limx-video-oss.limxdynamics.com/limx-website/products/oli/img-3.webp",
+      "https://api.robomercato.com/api/robots/media/robot_images/uploaded_LimX_Dynamics_Oli_hero_1771234318_b855751a.jpg"
+    ],
+    "videos": [
+      "AsBL9xMPQ_E",
+      "vYl-CPlnYp0",
+      "6zs05YBPlTY",
+      "rRCXeCIFJ0U",
+      "3_yZ13A9xgA"
+    ],
+    "tagline": "LimX Oli is a bipedal robot with 31 degrees of freedom."
+  },
+  {
+    "name": "Muks Spaceo M1",
+    "slag": "muks-spaceo-m1",
+    "useType": "EDUCATION",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177696/Muks_Spaceo_M1_1.avif",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177754/Muks_Spaceo_M1_2.avif",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177793/Muks_Spaceo_M1_3.avif",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177844/Muks_Spaceo_M1_4.avif",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177889/Muks_Spaceo_M1_5.avif",
+      "https://framerusercontent.com/images/EARfKaU7zCMPHhXUtsAsIQlq7ks.png?width=2562&height=1536",
+      "https://framerusercontent.com/images/2DJz0XuY5NAEb3beQHYkZPruA.png?width=2560&height=1536"
+    ],
+    "videos": [
+      "kjP8vx2iUig",
+      "TaBCMTYseDE",
+      "f2SQayJ8zI8",
+      "7vTIhUrQCCY",
+      "PGOJsLUXxyE"
+    ],
+    "tagline": "Muks Spaceo M1 is a prototype robot with 12 degrees of freedom, designed in IN."
+  },
+  {
+    "name": "PUDU D7",
+    "slag": "pudu-d7",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177953/PUDU_D7_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795177997/PUDU_D7_2.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178038/PUDU_D7_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178079/PUDU_D7_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178129/PUDU_D7_5.png",
+      "https://www.startupselfie.net/wp-content/uploads/2024/09/Pudu-Robotics-PUDU-D7-Semi-Humanoid-Robot-1024x682.jpg",
+      "https://gurutecno.com/wp-content/uploads/2026/06/PUDU-D7-4-1024x683.webp"
+    ],
+    "videos": [
+      "CbA9wA9etGA",
+      "QeUT_JgAkSc",
+      "zfVlKWNWhcA",
+      "MSEGGZvsZIc",
+      "DJ1rIaZV2Bc"
+    ],
+    "tagline": "PUDU D7 is a wheeled professional robot with 30–50 degrees of freedom."
+  },
+  {
+    "name": "PUDU D9",
+    "slag": "pudu-d9",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178197/PUDU_D9_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178249/PUDU_D9_2.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178295/PUDU_D9_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178338/PUDU_D9_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178390/PUDU_D9_5.webp",
+      "https://cdn.pudutech.com/official-website/d9/section6_2.webp",
+      "https://cdn.pudutech.com/official-website/d9/d9.webp",
+      "https://bclj1gvgmsjtdkc5.public.blob.vercel-storage.com/robots/pudu-robotics-d9-1768494044707.png"
+    ],
+    "videos": [
+      "gd5DdfJX_RM",
+      "AsUzGyzGSjk",
+      "9wk4sOJa-JA",
+      "hmILJIHTyKc",
+      "beamseged7U"
+    ],
+    "tagline": "PUDU D9 is a bipedal robot with 42 degrees of freedom."
+  },
+  {
+    "name": "Psi V1",
+    "slag": "psibot-v1",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178468/Psi_V1_1.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178531/Psi_V1_2.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178571/Psi_V1_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178617/Psi_V1_4.webp"
+    ],
+    "videos": [
+      "N2Y0iemUgtA",
+      "6lzAOhPHCFc",
+      "7atvsSGjjGw",
+      "ZOykwrqwTac",
+      "8gQ7qVmcKs0",
+      "vNUSl4DyeFY"
+    ],
+    "tagline": "Psi V1 is a wheeled robot for professional research applications."
+  },
+  {
+    "name": "RB-Y1",
+    "slag": "rainbow-rb-y1",
+    "useType": "RESEARCH",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178678/RB-Y1_1.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178724/RB-Y1_2.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178780/RB-Y1_3.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178838/RB-Y1_4.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795178888/RB-Y1_5.png",
+      "https://rainbow-robotics.com/wp-content/uploads/2026/07/rby-hero-scaled.png",
+      "https://rainbow-robotics.com/wp-content/uploads/rainbow-media-kit/2026-08/rby-rb-y1-rear-1024x1024.png",
+      "https://rainbow-robotics.com/wp-content/uploads/2026/05/RB-Y1-05.jpg",
+      "https://rainbow-robotics.com/wp-content/uploads/2026/05/RB-Y1-06.jpg"
+    ],
+    "videos": [
+      "D6M2IhSLSmY",
+      "JAlZ3QpPgIU",
+      "OlYBCgKm4Rw",
+      "Dp0JxQzJ-NM",
+      "I3_GIb7W5UQ"
+    ],
+    "tagline": "RB-Y1 is a wheeled research robot with 24 degrees of freedom and 3 kg payload per arm."
+  },
+  {
+    "name": "Sprout",
+    "slag": "fauna-sprout",
+    "useType": "EDUCATION",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179117/Sprout_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179155/Sprout_2.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179198/Sprout_3.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179251/Sprout_4.avif",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179308/Sprout_5.avif",
+      "https://cdn.prod.website-files.com/693933367980a29f6ff36b6d/69776e1541b03771e6de16ab_productpage-locomotion-1-desktop.webp",
+      "https://cdn.prod.website-files.com/6931911db0300aa6e7e3fc81/6969128e1dce2c2c9a13c195_Fader.avif",
+      "https://lifestyle.inquirer.net/files/2026/01/Sprout-robot-1.jpg",
+      "https://cdn.prod.website-files.com/693933367980a29f6ff36b6d/69775f291f66f1bbf54f4ab1_demo-poster.webp",
+      "https://cdn.prod.website-files.com/6931911db0300aa6e7e3fc81/695b6ab70067a74e462b8d18_Frame%202147215038.avif"
+    ],
+    "videos": [
+      "kn_tP26nXFY",
+      "lvvauf6g7r8",
+      "4zMbX1OEOSE",
+      "4aaRN2SQrAY",
+      "lNtHEFuQvsc"
+    ],
+    "tagline": "Sprout is a bipedal robot with 29 degrees of freedom, designed for education and research."
+  },
+  {
+    "name": "Syntro",
+    "slag": "workfar-syntro",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179380/Syntro_1.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179436/Syntro_2.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179487/Syntro_3.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179528/Syntro_4.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179577/Syntro_5.png",
+      "https://www.workfar.com/wp-content/uploads/2026/01/VR_1_w_teleoperator2.png",
+      "https://www.workfar.com/wp-content/uploads/2026/01/store_8.png",
+      "https://www.workfar.com/wp-content/uploads/2026/01/new_store_second.png",
+      "https://www.workfar.com/wp-content/uploads/2026/01/store_5.png"
+    ],
+    "videos": [
+      "6j0RF6P2F0s",
+      "90kCtjJHxtM",
+      "_AP1U9muUIE",
+      "hNfIR9qf5Yk",
+      "XCPjP8d-YIM"
+    ],
+    "tagline": "Syntro is a wheeled robot with 45 degrees of freedom and a 19.958 kg rated payload."
+  },
+  {
+    "name": "TALOS",
+    "slag": "pal-talos",
+    "useType": "RESEARCH",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179682/TALOS_1.avif",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179730/TALOS_2.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179781/TALOS_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179832/TALOS_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179878/TALOS_5.jpg",
+      "https://pal-robotics.com/wp-content/uploads/2024/04/TALOS-features-torque-529x600.webp",
+      "https://pal-robotics.com/wp-content/uploads/2023/12/01-BLOG-Talos-730x365.webp",
+      "https://pal-robotics.com/wp-content/uploads/2024/04/TALOS_datasheets-rayos-342x600.webp",
+      "https://uwaterloo.ca/robohub/sites/default/files/uploads/images/talos2.jpg"
+    ],
+    "videos": [
+      "qVzHe8FG984",
+      "vVTA-E3G8bQ",
+      "7VQFw7Yd2eE",
+      "SxdNvP2jKcc",
+      "TT03FKWnyc8"
+    ],
+    "tagline": "TALOS is a bipedal research robot with 32 degrees of freedom."
+  },
+  {
+    "name": "Torobo",
+    "slag": "tokyo-torobo",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179953/Torobo_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795179995/Torobo_2.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795180043/Torobo_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795180105/Torobo_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795180156/Torobo_5.webp",
+      "https://robotics.tokyo/_astro/torobo2_software.C0415sD3_Z2rCPVu.webp",
+      "https://robotics.tokyo/_astro/torobo2_in_mujoco.D6rfauV0_Z1pqVTP.webp",
+      "https://robotics.tokyo/_astro/torobo2.z_s_-U0O_Z1oElgF.webp"
+    ],
+    "videos": [
+      "B_I2k7MZEKg",
+      "ikOIzCEvS2Q",
+      "839JGUNZTSw",
+      "MXIts1QlStI",
+      "P-hn0tw8rMk"
+    ],
+    "tagline": "Torobo is a wheeled robot with 24 degrees of freedom for professional research applications."
+  },
+  {
+    "name": "Unitree G1",
+    "slag": "unitree-g1",
+    "useType": "RESEARCH",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795180244/Unitree_G1_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795180297/Unitree_G1_2.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795180367/Unitree_G1_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795180810/Unitree_G1_4.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795180884/Unitree_G1_5.jpg",
+      "https://www.unitree.com/images/a0e8042bd2df4c47af28ff371bb6b4fa_2740x1720.jpg",
+      "https://www.unitree.com/images/f38cf975d6a242a489079fc2160f4a83_2740x1720.jpg",
+      "https://www.unitree.com/images/8992fd91eed0495696ca876f86699523_2740x1720.jpg"
+    ],
+    "videos": [
+      "GzX1qOIO1bE",
+      "xwgaMdHzW40",
+      "mSPxRVTJW1I",
+      "5uT2xHylE34",
+      "0dw_UvrkIoI"
+    ],
+    "tagline": "Unitree G1 is a second-generation bipedal robot, successor to H1, weighing 35 kg and standing 132 cm tall."
+  },
+  {
+    "name": "Unitree H1",
+    "slag": "unitree-h1",
+    "useType": "RESEARCH",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183199/Unitree_H1_1.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183261/Unitree_H1_02.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183316/Unitree_H1_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183380/Unitree_H1_4.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183441/Unitree_H1_5.webp",
+      "https://3ddevice.com.ua/image/cache/catalog/products/unitree/00-00013721/unitree-h1-2-2-1000x1000.png"
+    ],
+    "videos": [
+      "GtPs_ygfaEA",
+      "FhcGKU5OtSk",
+      "83ShvgtyFAg",
+      "hrjxmJWo3IY",
+      "5vrTfZNOu-o"
+    ],
+    "tagline": "Unitree H1 is a bipedal robot, 180 cm tall, weighing 47 kg, with a max speed of 3.3 m/s."
+  },
+  {
+    "name": "Unitree H2",
+    "slag": "unitree-h2",
+    "useType": "RESEARCH",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183531/Unitree_H2_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183581/Unitree_H2_2.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183635/Unitree_H2_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183722/Unitree_H2_4.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183779/Unitree_H2_5.jpg",
+      "https://roboticsandautomationnews.com/wp-content/uploads/2025/10/unitree-h2-destiny-awakening-humanoid-robot-1.png",
+      "https://images.techeblog.com/wp-content/uploads/2025/10/20071224/unitree-h2-humanoid-robot-reveal.jpg"
+    ],
+    "videos": [
+      "NddOI2T2bEE",
+      "ovl6qK4ieMs",
+      "07Bse1eO-t4",
+      "kPvHUmCbRGs",
+      "Y3zb4o47yqA"
+    ],
+    "tagline": "Unitree H2 is a bipedal robot with 31 degrees of freedom."
+  },
+  {
+    "name": "Unitree R1",
+    "slag": "unitree-r1",
+    "useType": "RESEARCH",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183853/Unitree_R1_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183912/Unitree_R1_2.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795183959/Unitree_R1_3.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184005/Unitree_R1_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184062/Unitree_R1_5.jpg",
+      "https://www.unitree.com/images/eec8d82f279b440ea170982ffa80b3fa_3840x2160.jpg?x-oss-process=image/quality,q_60/format,webp",
+      "https://www.unitree.com/images/2f7d65a5229f40a5b9ba3ce7328f3c8d_3840x2160.jpg?x-oss-process=image/quality,q_60/format,webp",
+      "https://survey.crkennedy.com.au/product_image/ts1756083204/raw/UTR1BASIC/unitree-r1-basic-humanoid-robot--non-programmable-.webp",
+      "https://futurology.tech/cdn/shop/files/1R1-base_d813fcaa-78c6-49b4-a6cf-18a4960dcb35.jpg?v=1755774734"
+    ],
+    "videos": [
+      "v1Q4Su54iho",
+      "43bcvea4HAA",
+      "he3csf6jOfA",
+      "FZZxJN2rVn8",
+      "bxa93wSbtDQ"
+    ],
+    "tagline": "The Unitree R1 is a bipedal robot, 123 cm tall, weighing 29 kg, with 20–26 degrees of freedom."
+  },
+  {
+    "name": "Astribot S1",
+    "slag": "astribot-s1",
+    "useType": "RESEARCH",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184152/Astribot_S1_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184207/Astribot_S1_2.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184262/Astribot_S1_3.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184311/Astribot_S1_4.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184358/Astribot_S1_5.jpg"
+    ],
+    "videos": [
+      "6X-s4Qsn1z4",
+      "AePEcHIIk9s",
+      "L3rLT84qqLk",
+      "rHgn2nVlnx4",
+      "BuOcDTmvMn4"
+    ],
+    "tagline": "Astribot S1: A 170 cm, 80 kg humanoid robot with 23 degrees of freedom."
+  },
+  {
+    "name": "Booster T1",
+    "slag": "booster-t1",
+    "useType": "RESEARCH",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184431/Booster_T1_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184501/Booster_T1_2.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184564/Booster_T1_3.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184627/Booster_T1_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184674/Booster_T1_5.webp",
+      "https://www.robotshop.com/cdn/shop/files/pp_4386189.webp?v=1772048902&width=750"
+    ],
+    "videos": [
+      "2JkBcs7tNsI",
+      "44re6n9P840",
+      "oYSEtXH3gEY",
+      "fNKPdvkGzLg",
+      "vZ8BISv6MzQ"
+    ],
+    "tagline": "Booster T1 is a bipedal robot for research, currently a prototype."
+  },
+  {
+    "name": "Booster T2",
+    "slag": "booster-t2",
+    "useType": "EDUCATION",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184749/Booster_T2_1.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184806/Booster_T2_2.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184862/Booster_T2_3.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184944/Booster_T2_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795184991/Booster_T2_5.webp",
+      "https://fe-cdn.booster.tech/booster-official-website/release-0.1.13/_astro/platform-04.D7vE5dMS.webp",
+      "https://fe-cdn.booster.tech/booster-official-website/release-0.1.13/_astro/powerful-compute.B--k4gGU.webp"
+    ],
+    "videos": [
+      "yyAgPHg4VS4",
+      "kkIWw38NXOY",
+      "exX7gsj8QNo",
+      "RdGJSyd8RoU",
+      "mTdSpF7OMNg"
+    ],
+    "tagline": "Booster T2 is a bipedal robot with 31 degrees of freedom."
+  },
+  {
+    "name": "AgiBot X1",
+    "slag": "agibot-x1",
+    "useType": "RESEARCH",
+    "image": [
+      "https://www.image2url.com/r2/default/images/1795022390708-5612416a-cead-4064-a4b6-a970fa5e1814.webp",
+      "https://www.image2url.com/r2/default/images/1795023354173-a40dd9ab-33b1-4dc1-bcdb-c2e060b71bf4.jpeg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795185125/AgiBot_X1_3.jpg",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795185175/AgiBot_X1_4.png",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795185242/AgiBot_X1_5.webp",
+      "https://www.image2url.com/r2/default/images/1795023593816-be1f28a1-1ba4-4331-bf2d-dd09a072a4c7.jpg",
+      "https://www.image2url.com/r2/default/images/1795021856679-afcddbab-f38f-42d4-bf08-9fefb8f8f084.webp",
+      "https://www.image2url.com/r2/default/images/1795021615332-50f5b262-fe5e-4827-8041-4653d3d1e3b6.jpg"
+    ],
+    "videos": ["ics4Z-hsh88", "ro_JwcDpGRE", "rayedzqtlaw"],
+    "tagline": "AgiBot X1 is a 130 cm, 33 kg bipedal research robot with 34 degrees of freedom, announced in 2024."
+  },
+  {
+    "name": "Agility Robotics Digit",
+    "slag": "agility-digit",
+    "useType": "PROFESSIONAL",
+    "image": [
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795185314/Agility_Robotics_Digit_1.avif",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795185365/Agility_Robotics_Digit_2.avif",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795185414/Agility_Robotics_Digit_3.avif",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795185521/Agility_Robotics_Digit_4.webp",
+      "https://res.cloudinary.com/il1pnlny/image/upload/v1795185574/Agility_Robotics_Digit_5.avif",
+      "https://cdn.prod.website-files.com/68d6ca150ffa11fdc25d7575/6aa6b70097ee19af5dd9db6c_card-autonomous.avif",
+      "https://techcrunch.com/wp-content/uploads/2023/03/Agility-Robotics-DIGIT-3.jpg",
+      "https://tse1.mm.bing.net/th/id/OIP.Qk1Vo5Y2YONJfx_HQu8pPQHaMZ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ],
+    "videos": [
+      "oyq9BOwK5XI",
+      "wapeP93Q5ng",
+      "AJpTpUqjgrY",
+      "tDgjgDAH8iE",
+      "0dexTZ7r02Q"
+    ],
+    "tagline": "Agility Robotics Digit is a bipedal robot for professional logistics and manufacturing."
+  }
+]
