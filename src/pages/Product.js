@@ -33,8 +33,6 @@ export default function Product() {
 
   const OPTIONS = {
     axis: "y",
-    watchDrag: true,
-    watchFocus: true,
   };
   const SLIDES = humanoidData[0].image;
   const SCROLLER_SLIDES = data.bestFor;
