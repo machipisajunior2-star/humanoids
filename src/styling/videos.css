@@ -166,6 +166,8 @@
     margin-top: 5vh;
   }
   .thumbs {
+    box-sizing: border-box;
+    display: flex;
     position: inherit;
     overflow-y: visible;
     overflow-x: scroll;
