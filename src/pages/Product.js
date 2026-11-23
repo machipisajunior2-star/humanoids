@@ -5,7 +5,7 @@ import { fetchProduct } from "../redux/product/productActions";
 import Videos from "../components/Videos";
 import NewsComponent from "../components/NewsComponent";
 import HumanoidComponent from "../components/HumanoidComponent";
-import { ThreeCircles, Watch } from "react-loader-spinner";
+import { ThreeCircles } from "react-loader-spinner";
 import EmblaCarousel from "../components/embla/EmblaCarousel";
 import EmblaScroller from "../components/embla/EmblaScroller";
 import { fetchNews } from "../redux/news/newsActions";
