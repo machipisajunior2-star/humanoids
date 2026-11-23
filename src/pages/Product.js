@@ -31,7 +31,7 @@ export default function Product() {
       humanoid.name !== humanoidData[0].name,
   );
 
-  const OPTIONS = { axis: "y" };
+  const OPTIONS = { axis: "y", watchDrag: false };
   const SLIDES = humanoidData[0].image;
   const SCROLLER_SLIDES = data.bestFor;
   const currentDateObj = new Date(data.announcedAt);
