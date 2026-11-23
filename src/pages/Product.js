@@ -5,7 +5,7 @@ import { fetchProduct } from "../redux/product/productActions";
 import Videos from "../components/Videos";
 import NewsComponent from "../components/NewsComponent";
 import HumanoidComponent from "../components/HumanoidComponent";
-import { ThreeCircles } from "react-loader-spinner";
+import { ThreeCircles, Watch } from "react-loader-spinner";
 import EmblaCarousel from "../components/embla/EmblaCarousel";
 import EmblaScroller from "../components/embla/EmblaScroller";
 import { fetchNews } from "../redux/news/newsActions";
@@ -31,7 +31,10 @@ export default function Product() {
       humanoid.name !== humanoidData[0].name,
   );
 
-  const OPTIONS = { axis: "y", watchDrag: false };
+  const OPTIONS = {
+    axis: "y",
+    watchFocus: true,
+  };
   const SLIDES = humanoidData[0].image;
   const SCROLLER_SLIDES = data.bestFor;
   const currentDateObj = new Date(data.announcedAt);
