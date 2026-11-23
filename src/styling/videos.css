@@ -168,7 +168,7 @@
   .thumbs {
     position: inherit;
     overflow-y: visible;
-    width: 100%;
+    width: 300px;
     overflow-x: auto;
     white-space: nowrap;
     -webkit-mask-image: linear-gradient(
