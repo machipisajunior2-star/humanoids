@@ -60,9 +60,7 @@ export default function Contact() {
           <li>
             <Link
               to="/about"
-              style={{
-                color: colorState.text === "#000000" ? "#595970" : "#BFBFBF",
-              }}
+              style={{ color: colorState.text === "#000000" ? "#595970" : "#BFBFBF" }}
             >
               About
             </Link>
@@ -70,9 +68,7 @@ export default function Contact() {
           <li>
             <Link
               to="/contact"
-              style={{
-                color: colorState.text === "#000000" ? "black" : "white",
-              }}
+              style={{ color: colorState.text === "#000000" ? "black" : "white" }}
             >
               Contact
             </Link>
@@ -135,101 +131,71 @@ export default function Contact() {
           <h2>Contact form</h2>
           <label htmlFor="name_input">Name</label>
           <input
-            onFocus={(event) => {
-              event.preventDefault();
-              event.currentTarget.style.border = "2px solid #FF4C00";
-            }}
-            onBlur={(event) => {
-              event.currentTarget.style.border = "";
-            }}
+            onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
+            onBlur={(event) => { event.currentTarget.style.border = ""; }}
             key="conatct_name_input"
             name="name"
             id="name_input"
             type="text"
             placeholder="Your Name"
             style={{
-              backgroundColor:
-                colorState.text === "#000000" ? "#CFCFCA" : "#404040",
+              backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
               color: `${colorState.text === "#000000" ? "#262626" : "#d9d9d9"}`,
             }}
             required
           />
-          <label htmlFor="email_input">Email address</label>
+          <label>Email address</label>
           <input
-            onFocus={(event) => {
-              event.preventDefault();
-              event.currentTarget.style.border = "2px solid #FF4C00";
-            }}
-            onBlur={(event) => {
-              event.currentTarget.style.border = "";
-            }}
+            onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
+            onBlur={(event) => { event.currentTarget.style.border = ""; }}
             id="email_input"
             name="email"
             type="email"
             placeholder="An address where you can receive a reply"
             style={{
-              backgroundColor:
-                colorState.text === "#000000" ? "#CFCFCA" : "#404040",
+              backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
               color: `${colorState.text === "#000000" ? "#262626" : "#d9d9d9"}`,
             }}
             required
           />
-          <label htmlFor="subject_input">Subject</label>
+          <label>Subject</label>
           <input
-            onFocus={(event) => {
-              event.preventDefault();
-              event.currentTarget.style.border = "2px solid #FF4C00";
-            }}
-            onBlur={(event) => {
-              event.currentTarget.style.border = "";
-            }}
+            onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
+            onBlur={(event) => { event.currentTarget.style.border = ""; }}
             name="subject"
             id="subject_input"
             type="text"
             placeholder="What would you like to discuss?"
             style={{
-              backgroundColor:
-                colorState.text === "#000000" ? "#CFCFCA" : "#404040",
+              backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
               color: `${colorState.text === "#000000" ? "#262626" : "#d9d9d9"}`,
             }}
             required
           />
-          <label htmlFor="message_input">Message</label>
+          <label>Message</label>
           <textarea
-            onFocus={(event) => {
-              event.preventDefault();
-              event.currentTarget.style.border = "2px solid #FF4C00";
-            }}
-            onBlur={(event) => {
-              event.currentTarget.style.border = "";
-            }}
+            onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
+            onBlur={(event) => { event.currentTarget.style.border = ""; }}
             id="message_input"
             name="message"
             type="text"
             placeholder="Include enough detail to make your question or suggestion easy to understand."
             style={{
-              backgroundColor:
-                colorState.text === "#000000" ? "#CFCFCA" : "#404040",
+              backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
               color: `${colorState.text === "#000000" ? "#262626" : "#d9d9d9"}`,
             }}
             required
           />
-          <label htmlFor="optional_input">Optional link</label>
+          <label>Optional link</label>
           <input
-            onFocus={(event) => {
-              event.preventDefault();
-              event.currentTarget.style.border = "2px solid #FF4C00";
-            }}
-            onBlur={(event) => {
-              event.currentTarget.style.border = "";
-            }}
+            onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
+            onBlur={(event) => { event.currentTarget.style.border = ""; }}
             id="optional_input"
             name="optional"
             type="text"
             placeholder="Add a project, article, portfolio, repository, or profile if it helps provide context."
             style={{
-              backgroundColor:
-                colorState.text === "#000000" ? "#CFCFCA" : "#404040",
+              backgroundColor: colorState.text === "#000000" ? "#CFCFCA" : "#404040",
               color: colorState.text === "#000000" ? "#262626" : "#d9d9d9",
             }}
           />

@@ -42,6 +42,7 @@
 textarea:focus {
   outline: none;
   border-color: #ff4c00 !important;
+  -webkit-text-size-adjust: 100%;
 }
 
 .info_container form button {
