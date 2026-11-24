@@ -1,7 +1,23 @@
+/* eslint-disable no-undef */
 import { expect, test } from "@jest/globals";
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import Videos from "../../components/Videos";
+
+jest.mock("swiper", () => {
+  const PropTypes = jest.requireActual("prop-types");
+  const Swiper = ({ children }) => (
+    <div data-testid="swiper-testid">{children}</div>
+  );
+  Swiper.propTypes = { children: PropTypes.node };
+
+  const SwiperSlide = ({ children }) => (
+    <div data-testid="swiper-slide-testid">{children}</div>
+  );
+  SwiperSlide.propTypes = { children: PropTypes.node };
+
+  return { Swiper, SwiperSlide };
+});
 
 test("render videos", () => {
   render(
