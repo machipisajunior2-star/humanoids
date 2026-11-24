@@ -6,7 +6,7 @@ import Videos from "../components/Videos";
 import NewsComponent from "../components/NewsComponent";
 import HumanoidComponent from "../components/HumanoidComponent";
 import { ThreeCircles } from "react-loader-spinner";
-import MyCarousel from "../components/embla/Pure-react-carousel";
+import MyCarousel from "../components/embla/SwiperCarousel";
 import EmblaScroller from "../components/embla/EmblaScroller";
 import { fetchNews } from "../redux/news/newsActions";
 import humanoids from "../data/data.json";

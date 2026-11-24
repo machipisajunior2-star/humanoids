@@ -1,7 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Autoplay,
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,7 +21,7 @@ export default function MyCarousel(props) {
   return (
     <div className="container" style={{ "--button-color": color }}>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={400}
         slidesPerView={1}
         navigation
@@ -23,6 +29,12 @@ export default function MyCarousel(props) {
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
+        }}
       >
         {slides.map((image, i) => (
           <SwiperSlide key={i}>

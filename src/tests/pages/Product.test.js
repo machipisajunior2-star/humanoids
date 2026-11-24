@@ -15,10 +15,10 @@ jest.mock("swiper/react", () => ({
 }));
 
 jest.mock("swiper/modules", () => ({
-  Navigation: (props) => null,
-  Pagination: (props) => null,
-  Scrollbar: (props) => null,
-  A11y: (props) => null,
+  Navigation: () => null,
+  Pagination: () => null,
+  Scrollbar: () => null,
+  A11y: () => null,
 }));
 
 jest.mock("embla-carousel-react", () => {

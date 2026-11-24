@@ -116,6 +116,22 @@
   padding: 5px;
 }
 
+.thumb_scroller .swiper {
+  display: block;
+  align-items: flex-start;
+  height: max-content;
+}
+
+.thumb_scroller .swiper-slide {
+  flex-shrink: initial;
+  height: min-content !important;
+}
+
+.thumb_scroller .swiper-wrapper {
+  justify-content: space-between;
+  width: -webkit-fill-available;
+}
+
 .scroller_button {
   background: none;
   border: none;
@@ -135,6 +151,14 @@
 }
 
 @media only screen and (max-width: 800px) {
+  
+.thumb_scroller .swiper {
+  height: max-content;
+  width: 100vw;
+}
+  .thumb_scroller .swiper-slide {
+    width: max-content !important;
+  }
   .video_button .video_thumbnail {
     height: 50vh;
   }

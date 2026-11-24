@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import YouTube from "react-youtube";
@@ -7,6 +5,7 @@ import { GiPlayButton } from "react-icons/gi";
 import { firstValueFrom } from "rxjs";
 import data from "../data/data.json";
 import { getVideoData$ } from "../utils";
+import MyScroller from "./embla/SwiperScroller";
 import "../styling/videos.css";
 
 export default function Videos(props) {
@@ -111,7 +110,8 @@ export default function Videos(props) {
         </h3>
         <div className="thumbs">
           <div className="thumb_scroller">
-            {video_id.slice(1).map((video, i) => (
+            <MyScroller data={data} videos={video_id} focusVideo={focusVideo} theme={theme} color={color} handle_thumb={handle_thumb} thumbnail={thumbnail} />
+            {/* {video_id.slice(1).map((video, i) => (
               <button
                 className="scroller_button"
                 key={`scroller_button_${i}`}
@@ -132,7 +132,7 @@ export default function Videos(props) {
                   }}
                 />
               </button>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>
