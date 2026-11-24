@@ -82,7 +82,6 @@
 
 .thumbs {
   height: -webkit-fill-available;
-  position: absolute;
   overflow-y: scroll;
   -webkit-mask-image: linear-gradient(
     to bottom,
@@ -191,10 +190,11 @@
     margin-top: 5vh;        
     height: auto;
   }
+  
   .thumbs {
+    height: min-content !important;
     box-sizing: border-box;
     display: flex;
-    position: inherit;
     overflow-y: visible;
     overflow-x: scroll;
     -webkit-mask-image: linear-gradient(
