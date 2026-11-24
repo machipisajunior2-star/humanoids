@@ -176,7 +176,7 @@
   }
 
   .thumb_scroller .video_thumbnail {
-    width: stretch;
+    width: auto;
     height: 20vh;
   }
 
