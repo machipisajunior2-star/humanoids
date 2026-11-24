@@ -27,8 +27,6 @@ export default function MyCarousel(props) {
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
         loop={true}
         autoplay={{
           delay: 2500,

@@ -26,8 +26,6 @@ export default function MyScroller(props) {
         slidesPerView={orientation === "Desktop" ? 3 : 2}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
         direction={orientation === "Desktop" ? "vertical" : "horizontal"}
       >
         {videos.slice(1).map((video, i) => (

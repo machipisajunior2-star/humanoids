@@ -150,7 +150,9 @@
 }
 
 @media only screen and (max-width: 800px) {
-  
+.more_videos_label {
+  margin-bottom: 2vh;
+}
 .thumb_scroller .swiper {
   height: max-content;
   width: 100vw;
@@ -158,12 +160,6 @@
 }
   .thumb_scroller .swiper-slide {
     width: max-content !important;
-  }
-  .video_button .video_thumbnail {
-    height: 50vh;
-  }
-  .youtube_iframe {
-    height: 50vh;
   }
   .humanoid_videos_section {
     display: block;
@@ -177,6 +173,12 @@
   .thumb_scroller .video_thumbnail {
     width: auto;
     height: 20vh;
+  }
+    .video_button .video_thumbnail {
+        height: 60vh;
+    }
+  .youtube_iframe {
+    height: 60vh;
   }
 
   .youtube_player_container {
@@ -224,6 +226,12 @@
 }
 
 @media only screen and (max-width: 450px) {
+    .video_button .video_thumbnail {
+        height: 40vh;
+    }
+  .youtube_iframe {
+    height: 40vh;
+  }
   .thumb_scroller .video_thumbnail {
     height: 15vh;
   }
