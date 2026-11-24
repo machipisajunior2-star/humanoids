@@ -83,6 +83,7 @@
 .thumbs {
   height: -webkit-fill-available;
   position: absolute;
+  overflow-y: scroll;
   -webkit-mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
@@ -101,6 +102,8 @@
   );
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .thumbs::-webkit-scrollbar {
@@ -152,6 +155,7 @@
 .thumb_scroller .swiper {
   height: max-content;
   width: 100vw;
+  overflow-x: scroll;
 }
   .thumb_scroller .swiper-slide {
     width: max-content !important;
@@ -190,6 +194,8 @@
     box-sizing: border-box;
     display: flex;
     position: inherit;
+    overflow-y: visible;
+    overflow-x: scroll;
     -webkit-mask-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 0) 0%,
