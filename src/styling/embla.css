@@ -37,12 +37,6 @@
   user-select: none;
 }
 
-.embla_humanoid_image {
-  height: inherit;
-  width: auto;
-  border-radius: 12.5px;
-}
-
 .embla__controls {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -160,10 +154,6 @@
     --slide-size: 100%;
     width: 100%;
   }
-  .embla_humanoid_image {
-    height: inherit;
-    width: inherit;
-  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -175,14 +165,6 @@
 @media only screen and (max-width: 450px) {
   .embla {
     --slide-spacing: 0rem;
-  }
-  .embla__container > :first-child .embla_humanoid_image {
-    height: initial;
-    width: 150%;
-  }
-  .embla_humanoid_image {
-    height: inherit;
-    width: auto;
   }
   .embla__dot:before,
   .embla__dot:after {

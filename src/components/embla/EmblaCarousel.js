@@ -87,3 +87,8 @@ const EmblaCarousel = (props) => {
 };
 
 export default EmblaCarousel;
+
+EmblaScroller.propTypes = {
+  slides: PropTypes.array.isRequired,
+  options: PropTypes.object,
+};

@@ -7,6 +7,20 @@ import store from "../../redux/store";
 import Product from "../../pages/Product";
 import data from "../../data/data.json";
 
+jest.mock("swiper/react", () => ({
+  Swiper: ({ children }) => <div data-testid="swiper-testid">{children}</div>,
+  SwiperSlide: ({ children }) => (
+    <div data-testid="swiper-slide-testid">{children}</div>
+  ),
+}));
+
+jest.mock("swiper/modules", () => ({
+  Navigation: (props) => null,
+  Pagination: (props) => null,
+  Scrollbar: (props) => null,
+  A11y: (props) => null,
+}));
+
 jest.mock("embla-carousel-react", () => {
   return () => [null];
 });

@@ -6,7 +6,7 @@ import Videos from "../components/Videos";
 import NewsComponent from "../components/NewsComponent";
 import HumanoidComponent from "../components/HumanoidComponent";
 import { ThreeCircles } from "react-loader-spinner";
-import EmblaCarousel from "../components/embla/EmblaCarousel";
+import MyCarousel from "../components/embla/Pure-react-carousel";
 import EmblaScroller from "../components/embla/EmblaScroller";
 import { fetchNews } from "../redux/news/newsActions";
 import humanoids from "../data/data.json";
@@ -33,6 +33,7 @@ export default function Product() {
 
   const OPTIONS = {
     axis: "y",
+    focus: false,
   };
   const SLIDES = humanoidData[0].image;
   const SCROLLER_SLIDES = data.bestFor;
@@ -76,9 +77,8 @@ export default function Product() {
           </h1>
         </header>
         <div className="product_details_container">
-          <EmblaCarousel
+          <MyCarousel
             slides={SLIDES}
-            options={OPTIONS}
             color={colorPicker(data.userType.toLowerCase())}
           />
           <div className="product_details">
