@@ -58,7 +58,7 @@ export default function Footer() {
               }}
             >
               CREATED BY <br />
-              HAMID MURAMBIWA
+              HAMID FARIS
             </small>
           </Link>
         </div>

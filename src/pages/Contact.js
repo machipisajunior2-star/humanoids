@@ -144,7 +144,7 @@ export default function Contact() {
             }}
             required
           />
-          <label>Email address</label>
+          <label htmlFor="email_input">Email address</label>
           <input
             onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
             onBlur={(event) => { event.currentTarget.style.border = ""; }}
@@ -158,7 +158,7 @@ export default function Contact() {
             }}
             required
           />
-          <label>Subject</label>
+          <label htmlFor="subject_input">Subject</label>
           <input
             onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
             onBlur={(event) => { event.currentTarget.style.border = ""; }}
@@ -172,7 +172,7 @@ export default function Contact() {
             }}
             required
           />
-          <label>Message</label>
+          <label htmlFor="message_input">Message</label>
           <textarea
             onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
             onBlur={(event) => { event.currentTarget.style.border = ""; }}
@@ -186,7 +186,7 @@ export default function Contact() {
             }}
             required
           />
-          <label>Optional link</label>
+          <label htmlFor="optional_input">Optional link</label>
           <input
             onFocus={(event) => { event.currentTarget.style.border = "2px solid #FF4C00"; }}
             onBlur={(event) => { event.currentTarget.style.border = ""; }}

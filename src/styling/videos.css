@@ -80,7 +80,7 @@
 }
 
 .thumbs {
-  height: -webkit-fill-available;
+  height: 90vh;
   overflow-y: scroll;
   -webkit-mask-image: linear-gradient(
     to bottom,
@@ -146,6 +146,10 @@
   .youtube_iframe {
     height: 70vh;
   }
+
+.thumbs {
+  height: 67vh;
+}
 }
 
 @media only screen and (max-width: 800px) {

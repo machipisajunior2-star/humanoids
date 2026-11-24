@@ -11,6 +11,7 @@ import EmblaScroller from "../components/embla/EmblaScroller";
 import { fetchNews } from "../redux/news/newsActions";
 import humanoids from "../data/data.json";
 import { colorPicker, removeDuplicatesByProperty } from "../utils";
+import parse from "html-react-parser";
 import "../styling/embla.css";
 import "../styling/product.css";
 
@@ -30,7 +31,9 @@ export default function Product() {
       humanoid.useType === humanoidData[0].useType &&
       humanoid.name !== humanoidData[0].name,
   );
-
+  console.log(
+    data.specs
+  );
   const OPTIONS = {
     axis: "y",
     focus: false,
@@ -192,6 +195,20 @@ export default function Product() {
               ))}
             </ul>
           </div>
+          <header>
+            <h3 style={{ color: colorPicker(data.userType.toLowerCase()) }}>
+              AUTONOMY SPECS
+            </h3>
+          </header>
+          <p>
+            {data.specs
+              ?.filter((spec) => spec.group?.toLowerCase() === "autonomy")
+              ?.map((e) =>
+                parse(
+                  `<strong>${e.label}:</strong> <br /> <small>${e.statements[0].evidenceQuote}</small> <br />  <br />`,
+                ),
+              ) || "_"}{" "}
+          </p>
         </div>
         <div className="faq_images_container">
           <img
@@ -244,8 +261,52 @@ export default function Product() {
             <p>{data?.generation || "_"}</p>
             <span>LIFE CYCLE STAGE</span>
             <p>{data?.lifecycleStage || "_"}</p>
-            <span>YEAR</span>
-            <p>{year || "_"}</p>
+            {data.specs?.filter((spec) => spec.label === "Sold in").length ? (
+              <>
+                <span>Availability Regions</span>
+                <p>
+                  {
+                    data.specs?.filter((spec) => spec.label === "Sold in")[0]
+                      .statements[0].rawText
+                  }
+                </p>
+              </>
+            ) : (
+              <>
+              </>
+            )}
+            {data.specs?.filter((spec) => spec.label === "Founded").length ? (
+              <>
+                <span>Founded</span>
+                <p>
+                  {
+                    data.specs?.filter((spec) => spec.label === "Founded")[0]
+                      .statements[0].rawText
+                  }
+                </p>
+              </>
+            ) : (
+              <>
+                <span>YEAR</span>
+                <p>{year || "_"}</p>
+              </>
+            )}
+            {data.specs?.filter((spec) => spec.label === "Headquarters")
+              .length ? (
+              <>
+                <span>Headquarters</span>
+                <p>
+                  {
+                    data.specs?.filter(
+                      (spec) => spec.label === "Headquarters",
+                    )[0].statements[0].rawText
+                  }
+                </p>
+              </>
+            ) : (
+              <>
+              </>
+            )}
             <span>WEBSITE</span>
             <a
               className="manufacturer_link"
@@ -261,6 +322,33 @@ export default function Product() {
             <p style={{ color: colorPicker(data.userType.toLowerCase()) }}>
               {data?.handJointCount || "_"}
             </p>
+            {data.specs?.filter((spec) => spec.label === "Arm span").length ? (
+              <>
+                <span>Arm span</span>
+                <p style={{ color: colorPicker(data.userType.toLowerCase()) }}>
+                  {
+                    data.specs?.filter((spec) => spec.label === "Arm span")[0]
+                      .statements[0].rawText
+                  }
+                </p>
+              </>
+            ) : (
+              ""
+            )}
+            {data.specs?.filter((spec) => spec.label === "Arm length")
+              .length ? (
+              <>
+                <span>Arm length</span>
+                <p style={{ color: colorPicker(data.userType.toLowerCase()) }}>
+                  {
+                    data.specs?.filter((spec) => spec.label === "Arm length")[0]
+                      .statements[0].rawText
+                  }
+                </p>
+              </>
+            ) : (
+              ""
+            )}
             <span>WEIGHT</span>
             <p style={{ color: colorPicker(data.userType.toLowerCase()) }}>
               {data.specs?.filter(
@@ -309,13 +397,105 @@ export default function Product() {
                 )[0]
                 ?.unit?.toLowerCase()}
             </p>
+            {data.specs?.filter((spec) => spec.label === "Depth min range")
+              .length ? (
+              <>
+                <span>Depth min range</span>
+                <p style={{ color: colorPicker(data.userType.toLowerCase()) }}>
+                  {
+                    data.specs?.filter(
+                      (spec) => spec.label === "Depth min range",
+                    )[0].statements[0].num
+                  }
+                  {
+                    data.specs?.filter(
+                      (spec) => spec.label === "Depth min range",
+                    )[0].statements[0].rawUnit
+                  }
+                </p>
+              </>
+            ) : (
+              ""
+            )}
+            {data.specs?.filter((spec) => spec.label === "Speaker power")
+              .length ? (
+              <>
+                <span>Speaker power</span>
+                <p style={{ color: colorPicker(data.userType.toLowerCase()) }}>
+                  {
+                    data.specs?.filter(
+                      (spec) => spec.label === "Speaker power",
+                    )[0].statements[0].rawText
+                  }
+                </p>
+              </>
+            ) : (
+              ""
+            )}
+            {data.specs?.filter((spec) => spec.key === "cameraFovVerticalDeg")
+              .length ? (
+              <>
+                <span>Camera FOV (vertical)</span>
+                <p style={{ color: colorPicker(data.userType.toLowerCase()) }}>
+                  {
+                    data.specs?.filter(
+                      (spec) => spec.key === "cameraFovVerticalDeg",
+                    )[0].statements[0].rawText
+                  }
+                </p>
+              </>
+            ) : (
+              ""
+            )}
+            {data.specs?.filter((spec) => spec.key === "cameraFovHorizontalDeg")
+              .length ? (
+              <>
+                <span>Camera FOV (horizontal)</span>
+                <p style={{ color: colorPicker(data.userType.toLowerCase()) }}>
+                  {
+                    data.specs?.filter(
+                      (spec) => spec.key === "cameraFovHorizontalDeg",
+                    )[0].statements[0].rawText
+                  }
+                </p>
+              </>
+            ) : (
+              ""
+            )}
+            {data.specs?.filter((spec) => spec.label === "Bluetooth").length ? (
+              <>
+                <span>Bluetooth</span>
+                <p style={{ color: colorPicker(data.userType.toLowerCase()) }}>
+                  {
+                    data.specs?.filter((spec) => spec.label === "Bluetooth")[0]
+                      .statements[0].rawText
+                  }
+                </p>
+              </>
+            ) : (
+              ""
+            )}
           </div>
           <div className="specs_third_pillar">
             <span>SENSORS</span>
             <p>
-              {data.components
-                ?.filter((comp) => comp.kind.toLowerCase() === "sensor")
-                ?.map((com) => `${com.componentName}, `) || "_"}
+              {data.specs?.filter(
+                (spec) => spec.label?.toLowerCase() === "sensors",
+              ).length
+                ? removeDuplicatesByProperty(
+                    data.specs?.filter(
+                      (spec) => spec.label?.toLowerCase() === "sensors",
+                    )[0]?.statements,
+                    "rawText",
+                  )?.map((statement) =>
+                    parse(
+                      `<strong>${statement.rawText}:</strong> <br />- <small>${statement.evidenceQuote}</small> <br /> <br />`,
+                    ),
+                  )
+                : data.components
+                    ?.filter((comp) => comp.kind.toLowerCase() === "sensor")
+                    ?.map((com) => parse(`- ${com.componentName} <br />`)) ||
+                  "_"}
             </p>
             <span>HAND SENSORS</span>
             <p>
@@ -327,7 +507,7 @@ export default function Product() {
                       (spec) => spec.label?.toLowerCase() === "hand sensors",
                     )[0]?.statements,
                     "rawText",
-                  )?.map((statement) => `${statement.rawText}, `)
+                  )?.map((statement) => parse(`- ${statement.rawText} <br />`))
                 : "_"}
             </p>
             <span>ACTUATOR TYPES</span>
@@ -340,14 +520,16 @@ export default function Product() {
                       (spec) => spec.label?.toLowerCase() === "actuator types",
                     )[0]?.statements,
                     "rawText",
-                  ).map((act) => `${act.rawText}, `)
+                  ).map((act) => parse(`- ${act.rawText} <br />`))
                 : "_"}
             </p>
             <span>MATERIALS</span>
             <p>
-              {data.specs?.filter(
-                (spec) => spec.label?.toLowerCase() === "materials",
-              )[0]?.statements[0].rawText || "_"}{" "}
+              {data.specs
+                ?.filter((spec) => spec.label?.toLowerCase() === "materials")[0]
+                ?.statements[0].enumList?.map((material) =>
+                  parse(`- ${material} <br />`),
+                ) || "_"}{" "}
             </p>
           </div>
           <div className="specs_fourth_pillar">
@@ -356,9 +538,11 @@ export default function Product() {
               {data.components
                 ?.filter((comp) => comp.kind.toLowerCase() === "compute")
                 ?.map((com) => `${com.componentName}, `) ||
-                data.specs?.filter(
-                  (spec) => spec.label?.toLowerCase() === "compute",
-                )[0]?.statements[0].rawText ||
+                data.specs
+                  ?.filter((spec) => spec.label?.toLowerCase() === "compute")[0]
+                  ?.statements[0].enumList?.map((compute) =>
+                    parse(`- ${compute} <br />`),
+                  ) ||
                 "_"}{" "}
             </p>
             <span>SOFTWARE</span>
@@ -366,8 +550,8 @@ export default function Product() {
               {data.specs
                 ?.filter((spec) => spec.group?.toLowerCase() === "software")
                 ?.map((e) =>
-                  removeDuplicatesByProperty(e.statements, "rawText").map(
-                    (i) => `${e.label}: ${i.rawText}, `,
+                  removeDuplicatesByProperty(e.statements, "rawText").map((i) =>
+                    parse(`- ${e.label}: ${i.rawText} <br />`),
                   ),
                 ) || "_"}{" "}
             </p>
@@ -380,7 +564,24 @@ export default function Product() {
                 </p>
               )) || "_"}
             <span>COST</span>
-            <p>${data?.priceFromUsd || "_"}</p>
+            <p>
+              {data.specs?.filter((spec) => spec.label === "Price status")?.[0]
+                ?.statements
+                ? removeDuplicatesByProperty(
+                    data.specs?.filter(
+                      (spec) => spec.label === "Price status",
+                    )?.[0]?.statements,
+                    "rawText",
+                  ).map((e) => (
+                    <>
+                      <small>{e.rawText}: </small> {e.evidenceQuote} <br />{" "}
+                      <br />
+                    </>
+                  ))
+                : data.priceFromUsd
+                  ? `$${data.priceFromUsd}`
+                  : "_"}
+            </p>
           </div>
         </div>
       </section>
