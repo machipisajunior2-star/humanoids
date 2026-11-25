@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import { Analytics } from "@vercel/analytics/react";
 import App from "./App";
 import NavComponent from "./components/NavComponent";
 import Footer from "./components/Footer";
@@ -15,6 +16,7 @@ root.render(
       <NavComponent />
       <App />
       <Footer />
+      <Analytics />
     </Provider>
   </Router>,
 );
