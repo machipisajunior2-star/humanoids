@@ -59,10 +59,9 @@ export default function Videos(props) {
   function handle_thumb(video) {
     getVideoData(video);
     setVideoSelection((selection) => ({ ...selection, focusVideo: video }));
-    youtubePlayerRef.current?.target?.pauseVideo?.();
+    if ((document.querySelector("#yt").style.display === "flex")) return youtubePlayerRef.current.loadVideoById(video, 0);
     document.querySelector("#yt").style.display = "none";
     playerRef.current.style.display = "flex";
-    youtubePlayerRef.current?.pauseVideo?.();
   }
   function thumbnail(id) {
     return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
@@ -111,28 +110,6 @@ export default function Videos(props) {
         <div className="thumbs">
           <div className="thumb_scroller">
             <MyScroller data={data} videos={video_id} focusVideo={focusVideo} theme={theme} color={color} handle_thumb={handle_thumb} thumbnail={thumbnail} />
-            {/* {video_id.slice(1).map((video, i) => (
-              <button
-                className="scroller_button"
-                key={`scroller_button_${i}`}
-                onClick={() => handle_thumb(video)}
-                // eslint-disable-next-line react/no-unknown-property
-                css={css({
-                  ":hover .video_thumbnail": {
-                    border: `5px solid ${theme.text}`,
-                  },
-                })}
-              >
-                <img
-                  className="video_thumbnail"
-                  src={thumbnail(video)}
-                  alt={`${data[0].name} 1`}
-                  style={{
-                    border: focusVideo === video ? `5px solid ${color}` : "",
-                  }}
-                />
-              </button>
-            ))} */}
           </div>
         </div>
       </div>

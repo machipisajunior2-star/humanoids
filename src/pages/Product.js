@@ -31,9 +31,7 @@ export default function Product() {
       humanoid.useType === humanoidData[0].useType &&
       humanoid.name !== humanoidData[0].name,
   );
-  console.log(
-    data.specs
-  );
+  
   const OPTIONS = {
     axis: "y",
     focus: false,
