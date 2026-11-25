@@ -31,7 +31,7 @@ export default function Product() {
       humanoid.useType === humanoidData[0].useType &&
       humanoid.name !== humanoidData[0].name,
   );
-  
+
   const OPTIONS = {
     axis: "y",
     focus: false,
@@ -270,8 +270,7 @@ export default function Product() {
                 </p>
               </>
             ) : (
-              <>
-              </>
+              <></>
             )}
             {data.specs?.filter((spec) => spec.label === "Founded").length ? (
               <>
@@ -302,8 +301,7 @@ export default function Product() {
                 </p>
               </>
             ) : (
-              <>
-              </>
+              <></>
             )}
             <span>WEBSITE</span>
             <a

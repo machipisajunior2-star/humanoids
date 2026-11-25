@@ -6,7 +6,6 @@ import { Provider } from "react-redux";
 import store from "../redux/store";
 import App from "../App";
 
-
 jest.mock("swiper/react", () => {
   const PropTypes = require("prop-types");
   const Swiper = ({ children }) => (
@@ -17,9 +16,7 @@ jest.mock("swiper/react", () => {
   return {
     Swiper,
     SwiperSlide: Object.assign(
-      ({ children }) => (
-        <div data-testid="swiper-slide-testid">{children}</div>
-      ),
+      ({ children }) => <div data-testid="swiper-slide-testid">{children}</div>,
       { propTypes: { children: PropTypes.node } },
     ),
   };

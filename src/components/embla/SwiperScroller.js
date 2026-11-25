@@ -12,12 +12,17 @@ import "swiper/css/scrollbar";
 import "../../styling/carousel.css";
 
 export default function MyScroller(props) {
-  const { data, videos, focusVideo, handle_thumb, thumbnail, theme, color } = props;
-  const [orientation, setOrientation] = useState(window.innerWidth > 800 ? "Desktop" : "Mobile")
+  const { data, videos, focusVideo, handle_thumb, thumbnail, theme, color } =
+    props;
+  const [orientation, setOrientation] = useState(
+    window.innerWidth > 800 ? "Desktop" : "Mobile",
+  );
 
   window.addEventListener("resize", () => {
-    window.innerWidth > 800 ? setOrientation("Desktop") : setOrientation("Mobile")
-  })
+    window.innerWidth > 800
+      ? setOrientation("Desktop")
+      : setOrientation("Mobile");
+  });
   return (
     <div className="scroller-container">
       <Swiper
@@ -62,7 +67,7 @@ MyScroller.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
   videos: PropTypes.arrayOf(PropTypes.string).isRequired,
   focusVideo: PropTypes.string,

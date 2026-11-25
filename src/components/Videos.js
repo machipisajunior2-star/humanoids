@@ -59,7 +59,8 @@ export default function Videos(props) {
   function handle_thumb(video) {
     getVideoData(video);
     setVideoSelection((selection) => ({ ...selection, focusVideo: video }));
-    if ((document.querySelector("#yt").style.display === "flex")) return youtubePlayerRef.current.loadVideoById(video, 0);
+    if (document.querySelector("#yt").style.display === "flex")
+      return youtubePlayerRef.current.loadVideoById(video, 0);
     document.querySelector("#yt").style.display = "none";
     playerRef.current.style.display = "flex";
   }
@@ -109,7 +110,15 @@ export default function Videos(props) {
         </h3>
         <div className="thumbs">
           <div className="thumb_scroller">
-            <MyScroller data={data} videos={video_id} focusVideo={focusVideo} theme={theme} color={color} handle_thumb={handle_thumb} thumbnail={thumbnail} />
+            <MyScroller
+              data={data}
+              videos={video_id}
+              focusVideo={focusVideo}
+              theme={theme}
+              color={color}
+              handle_thumb={handle_thumb}
+              thumbnail={thumbnail}
+            />
           </div>
         </div>
       </div>
