@@ -29,7 +29,7 @@ Homepage
 
 ## Live Demo
 
-[Live Demo Link](<>)
+[Live Demo Link]("https://humanoids-omega.vercel.app/")
 
 ## Learning objectives
 
